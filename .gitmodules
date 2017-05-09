@@ -1,3 +1,6 @@
 [submodule "VF#"]
 	path = "VF#"
 	url = https://github.com/jdm7dv/visualfsharp.git
+[submodule "VC#"]
+	path = "VC#"
+	url = https://github.com/jdm7dv/roslyn.git
