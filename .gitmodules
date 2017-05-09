@@ -1,3 +1,6 @@
-[submodule "msbuild"]
-	path = msbuild
-	url = https://github.com/jdm7dv/msbuild.git
+[submodule "Microsoft.NET/VF#"]
+	path = "Microsoft.NET/VF#"
+	url = https://github.com/jdm7dv/visualfsharp.git
+[submodule "Microsoft.NET/VC#"]
+	path = "Microsoft.NET/VC#"
+	url = https://github.com/jdm7dv/roslyn.git
