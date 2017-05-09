@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="102fb8f9-470b-4878-a709-982d51d31545" name="Visitor" linkedPackageId="b3ccc04f-5e99-4747-a333-6d60262c1717" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="94149bc4-7ec7-45ab-b56d-5b52e3ad2c60" name="Client" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="300c5736-b60a-430b-8e28-9e5955cc7c0c" />
+        <targetEnds>
+          <association Id="60b5e873-a087-46f1-b26b-a3fe58e570c9" isDerived="false" sourceEndRoleName="Client" targetEndRoleName="IVisitor" isLeaf="false" isAbstract="false">
+            <interfaceMoniker Id="dc485594-5b89-4ad9-b4e5-9f3dc186d0aa" LastKnownName="IVisitor" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1bd797fe-bc28-45e3-8af9-3809bc7e5d0d" name="Client" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c1d27d9e-38ad-4dc9-9f13-bacec3ad65ba" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="14b4a43b-41fb-4b75-a468-cc15e6c9178e" name="IVisitor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9b12b649-0ffd-415e-a893-5c407bd625b4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="940bbb98-8d9d-48da-8ca0-4d244ccee0f8" />
+          </association>
+          <association Id="28b5b72f-20c5-4dd8-8c55-457aea527bb3" isDerived="false" sourceEndRoleName="Client" targetEndRoleName="Element" isLeaf="false" isAbstract="false">
+            <classMoniker Id="22aa69f6-8f49-484a-8190-655e7b8d3b7e" LastKnownName="Element" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d77e57bd-5570-4cc0-8f33-797d50dd66e1" name="Client" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ef254d90-79ec-4703-bbbf-6d56fd162376" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4eb94b2b-592c-4e49-b2bb-635117400635" name="Element" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d28593e0-505b-4f5c-bc87-8e609ab8ada1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="57bc2759-0391-4de8-b87c-9f684607c93e" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="dc485594-5b89-4ad9-b4e5-9f3dc186d0aa" name="IVisitor" isAbstract="false" isLeaf="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="c7f63a6d-e82d-40e2-b759-dbe498abe023" name="IVisitor" profile="GoFDesignPatterns">
+            <elementDefinition Id="fda1ab85-3ae3-45fd-a62f-1facb03a6528" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="3a452a5e-2aba-424a-8cf4-87eab61a0d20" />
+        <ownedOperations>
+          <operation Id="c3c36975-8b47-4c2e-ab6b-ce7958bc615c" name="Visit" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="515721d8-009d-4bec-9ecb-152671446072" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="c4d2790c-985e-4092-8f64-bad0dd37afa5" name="ConcreteElement" direction="In" isUnique="false">
+                  <elementDefinition Id="641cf937-c7ba-4e49-bd15-9ef1770111b0" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="d2665eef-b734-472d-905a-5b02cb4f515c" name="ConcreteVisitor" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="314bd3d3-37c1-4ece-99d3-e1813c7fb9e5" name="ConcreteVisitor" profile="GoFDesignPatterns">
+            <elementDefinition Id="824cc639-3fef-4c22-a9fd-9e1f769b41cc" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="f1802d8a-cd24-479a-9575-4731373e491c" />
+        <suppliersInternal>
+          <interfaceRealization Id="946bc78e-ca6e-4d58-992d-fcd11b8f2a29">
+            <interfaceMoniker Id="dc485594-5b89-4ad9-b4e5-9f3dc186d0aa" LastKnownName="IVisitor" />
+            <elementDefinition Id="adf47495-c66d-4471-b48b-afc59c59ffaa" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="4313d3cd-a2fd-49b3-8cb1-acba4157dee0" name="Visit" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="38146c23-fca6-4ef7-b994-9d95807647c0" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="595ccd50-42e4-47ec-ad5d-138f55f05067" name="ConcreteElement" direction="In" isUnique="false">
+                  <elementDefinition Id="7cc2a219-b312-4240-a3b5-4968c59134b0" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="22aa69f6-8f49-484a-8190-655e7b8d3b7e" name="Element" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="70255902-c7d4-45e6-8f6a-b32d029c7113" name="Element" profile="GoFDesignPatterns">
+            <elementDefinition Id="68d4d075-4210-4507-bb2c-b52e2a61552c" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="6c532526-b747-47fd-b912-1f18f628eb2a" />
+        <ownedOperationsInternal>
+          <operation Id="24ceab1d-73a9-47a3-8501-24b625e3b9ef" name="Accept" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="20d2cb6f-a60f-41f4-97c0-e2c4a95a9892" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="df341799-2dcf-45b3-979f-1d106e30a698" name="IVisitor" direction="In" isUnique="false">
+                  <elementDefinition Id="fe662e6f-344a-4f5f-8991-05573160bbaf" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="2fab60a7-793e-46fa-a8cd-2afcc5551a9f" name="ConcreteElement" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="0a792361-f73e-472d-88bf-89c35b09dced" name="ConcreteElement" profile="GoFDesignPatterns">
+            <elementDefinition Id="a02d5b2e-a662-42be-86ae-d23b1adda292" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="a5963ab1-0979-4295-a682-15a77fc17032" />
+        <generalsInternal>
+          <generalization Id="04397096-0f7c-4edd-b5b7-9d7831d17b7a" isSubstitutable="false">
+            <classMoniker Id="22aa69f6-8f49-484a-8190-655e7b8d3b7e" LastKnownName="Element" />
+            <elementDefinition Id="6655b324-6b49-41c8-a1d4-3dca5c27ea10" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="b3ccc04f-5e99-4747-a333-6d60262c1717" name="DesignPatternDiagrams">
+    <elementDefinition Id="907f02d9-97a4-416e-85de-c96834fd3288" />
+    <profileInstances>
+      <packageHasProfileInstances Id="baf2b7b9-752c-4190-99ee-86373b6228bb">
+        <profileInstance Id="9b37cf3b-a08e-4bac-aa03-25b791a0b944" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="0734af77-9394-4bf6-b667-e6c0d9c8066e">
+        <profileInstance Id="48f1e6d3-72b4-4a40-9b1f-01df628b08e8" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="38094563-7a18-416b-a81a-cc3b78d994b9">
+        <profileInstance Id="6f9b77d5-80bd-4e29-8d84-471b38f1790d" name="GoFDesignPatterns">
+          <elementDefinition Id="b2ec555c-7ad5-4568-ac10-ebbefafe538a" />
+        </profileInstance>
+        <elementDefinition Id="74b34c67-f946-48ae-a1f7-ce09ad6bf6e5" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

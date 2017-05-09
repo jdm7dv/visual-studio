@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<referenceContent version="1.0">
+    <!-- 1. The content directory, if not the same as the content file. -->
+    <location />
+    <!-- 2. The general content settings -->
+    <propertyGroup name="General">
+        <property name="Id">95502a2f-9886-4f98-9230-34a5a06bca0a</property>
+        <property name="FrameworkType">Framework40</property>
+    </propertyGroup>
+    <!-- 3. The reference items defining the API content -->
+    <referenceItems>
+        <referenceItem xamlSyntax="True">
+            <assembly>
+                <path value="..\SampleLibrary\Libraries\Caliburn.Micro\WPF\Caliburn.Micro.dll" />
+            </assembly>
+            <comments>
+                <path value="..\SampleLibrary\Libraries\Caliburn.Micro\WPF\Caliburn.Micro.xml" />
+            </comments>
+            <source />
+        </referenceItem>
+    </referenceItems>
+    <!-- 4. The various contents required for documentation -->
+    <contents>
+        <content type="Comments">
+            <doc />
+        </content>
+        <content type="Dependencies">
+            <dependencyContent />
+        </content>
+        <content type="HierarchicalToc">
+            <hierarchicalTocContent />
+        </content>
+    </contents>
+    <!-- 5. The API/attribute filters associated with the documentations -->
+    <filters>
+        <filter name="fte84adaaf" expose="True" type="ApiFilter" />
+        <filter name="fte91af5d3" expose="True" type="AttributeFilter" />
+    </filters>
+</referenceContent>

@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="b86fb692-af76-4f0f-a478-bf921f362e71" name="Command" linkedPackageId="ffa6a60d-b52b-437b-bd28-ae8882308d5c" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f2af826d-9c70-44b7-adf3-59134bf88994" name="Invoker" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f3d46511-5494-4a23-88c7-c5d9c44f6080" />
+        <targetEnds>
+          <association Id="3ee697b9-2da1-43f0-a5ee-c41ce5d335e3" isDerived="false" sourceEndRoleName="Invoker" targetEndRoleName="AbstractCommand" isLeaf="false" name="Invokes" isAbstract="false">
+            <classMoniker Id="8c4911e6-1736-44bb-b774-ae25bb18a758" LastKnownName="AbstractCommand" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c0347955-3e58-419b-a3cd-84d8ded53138" name="Invoker" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="73c0895b-7231-4904-8772-b291b40c2c7e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="21709d42-4b2b-4b3e-a21e-aa831da56029" name="AbstractCommand" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f3ae2d8f-ea92-4912-8d60-7af216bb9d96" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ca266d77-c51b-47f4-9303-9ad1c35d5d79" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="8c4911e6-1736-44bb-b774-ae25bb18a758" name="AbstractCommand" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="3bd9d0b6-539a-4c8f-bf3a-157196c565d6" name="AbstractCommand" profile="GoFDesignPatterns">
+            <elementDefinition Id="3e5b563b-622c-4e8d-8ab2-89c3c2fe2d4b" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="3a9724b6-5b5a-46e3-b03d-902b814a13ba" />
+        <ownedOperationsInternal>
+          <operation Id="e6ab25c1-9b8b-4920-b162-7ea785c4faf5" name="DoIt" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d0bb1311-ebfb-43c6-8c47-ef80771ff5f4" />
+          </operation>
+          <operation Id="0a0ddda9-6d45-4323-a5a4-3b497a7afe91" name="UndoIt" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d4487de5-58d3-4a71-bef6-2d8bea064bdb" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="2b85689a-3869-4d35-9f44-acd2ffc7ff76" name="ConcreteCommand" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="1afcc8da-1261-44dc-acd9-743f874b2562" name="ConcreteCommand" profile="GoFDesignPatterns">
+            <elementDefinition Id="1e9c216a-7eef-4329-b06f-c32feffcfa49" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="a18e89c0-bc10-49f5-a69f-55a8b71d3972" />
+        <generalsInternal>
+          <generalization Id="ce84f16c-032e-44f4-be75-652f0954bb95" isSubstitutable="false">
+            <classMoniker Id="8c4911e6-1736-44bb-b774-ae25bb18a758" LastKnownName="AbstractCommand" />
+            <elementDefinition Id="9d4111d8-494e-4699-b073-619eb0107668" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="40fdde05-d6c7-49a6-a464-4b504f3fc31c" name="CommandManager" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="42b157d7-56a4-4f27-b65a-1a836ab168a5" name="CommandManager" profile="GoFDesignPatterns">
+            <elementDefinition Id="6f1edc65-d688-4f5c-a38c-4560983c31f9" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="af1d6178-06bc-490e-b3c7-b85d4b54ffa8" />
+        <targetEnds>
+          <association Id="ea9f4259-0428-4408-ac45-e40a80cf908d" isDerived="false" sourceEndRoleName="CommandManager" targetEndRoleName="AbstractCommand" isLeaf="false" name="Manages" isAbstract="false">
+            <classMoniker Id="8c4911e6-1736-44bb-b774-ae25bb18a758" LastKnownName="AbstractCommand" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f09d89ab-4a75-497b-906f-11928254f071" name="CommandManager" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4fa61238-fe46-423c-a3b5-0f83409a7742" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b46dd513-9607-438d-b022-0d0041f73422" name="AbstractCommand" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7283b083-f3e4-4669-b699-0eef5f6d456c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="0267cfb9-1804-4198-ad27-0f29f31ecca1" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="ffa6a60d-b52b-437b-bd28-ae8882308d5c" name="DesignPatternDiagrams">
+    <elementDefinition Id="907f02d9-97a4-416e-85de-c96834fd3288" />
+    <profileInstances>
+      <packageHasProfileInstances Id="2e1ad47f-d694-4213-b993-eace40e3473d">
+        <profileInstance Id="f26698ee-f03d-4828-803a-28be2c72fb76" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="5986d67c-262a-4c94-892e-443ea47b70e6">
+        <profileInstance Id="2eb3b6a4-5917-456e-b0c9-332544698463" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="b8d1a468-0900-4ac4-8f1d-9cbc720355a3">
+        <profileInstance Id="d7c76fa1-8a6b-4b57-b6fa-a4b825c1e386" name="GoFDesignPatterns">
+          <elementDefinition Id="b2ec555c-7ad5-4568-ac10-ebbefafe538a" />
+        </profileInstance>
+        <elementDefinition Id="74b34c67-f946-48ae-a1f7-ce09ad6bf6e5" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

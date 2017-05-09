@@ -1,0 +1,6 @@
+C:\Users\Jonathan_Moore\Desktop\sandassist-71897\Main\Output\Sandcastle.XsdDocs.dll
+C:\Users\Jonathan_Moore\Desktop\sandassist-71897\Main\Output\Sandcastle.XsdDocs.pdb
+C:\Users\Jonathan_Moore\Desktop\sandassist-71897\Main\Source\XsdDocs\obj\Debug\XsdDocumentation.Properties.Resources.resources
+C:\Users\Jonathan_Moore\Desktop\sandassist-71897\Main\Source\XsdDocs\obj\Debug\XsdDocs.csproj.GenerateResource.Cache
+C:\Users\Jonathan_Moore\Desktop\sandassist-71897\Main\Source\XsdDocs\obj\Debug\Sandcastle.XsdDocs.dll
+C:\Users\Jonathan_Moore\Desktop\sandassist-71897\Main\Source\XsdDocs\obj\Debug\Sandcastle.XsdDocs.pdb

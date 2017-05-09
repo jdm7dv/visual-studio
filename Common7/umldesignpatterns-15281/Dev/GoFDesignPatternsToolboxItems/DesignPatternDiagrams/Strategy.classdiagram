@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="8b263171-73eb-4fcd-93e3-2de3c7ce4522" name="Strategy" linkedPackageId="c41b8ff8-71b7-4937-bb69-a02cb0e5d66c" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c197ebcf-28a6-4ca5-b26a-70fa9c8ef1ba" name="Client" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="abc78722-fd4d-42b3-93a0-1b75ee8b5870" />
+        <targetEnds>
+          <association Id="a95819c6-7b28-41ca-8a73-98eb9a1c11cb" isDerived="false" sourceEndRoleName="Client" targetEndRoleName="IStrategy" isLeaf="false" name="Uses" isAbstract="false">
+            <interfaceMoniker Id="17993731-5672-447a-9952-fdbc4249e8bf" LastKnownName="IStrategy" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="729ac9f1-8b89-49af-ba69-af36a7f94025" name="Client" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="31734f1f-8db3-406f-b7d7-db1a7790e525" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="62cd8142-4d4d-47d7-b321-3b733a07b8c9" name="IStrategy" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ca9a323d-3d31-4c89-bead-0859959e2eb6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="309e0965-9322-44b3-a877-219d402de0d6" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="17993731-5672-447a-9952-fdbc4249e8bf" name="IStrategy" isAbstract="false" isLeaf="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="03f382f1-568a-4a13-9a53-6cc7c85a3436" name="IStrategy" profile="GoFDesignPatterns">
+            <elementDefinition Id="8caa8ee5-4468-4964-8e3e-48c28957394f" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="130ae9dd-89b6-4c4d-8c6d-544129454e8e" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="5b489341-000c-4329-8fd4-c67a50aee306" name="ConcreteStrategy 1" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="20483f7e-2449-43b7-bbb9-2a42b0a422ed" name="ConcreteStrategy" profile="GoFDesignPatterns">
+            <elementDefinition Id="68ee81a7-8d83-4421-9739-1fd6be0eef42" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="e66cb23d-3c5f-4783-8469-f888284d9e97" />
+        <suppliersInternal>
+          <interfaceRealization Id="69cae2e9-ea34-4a43-96f2-084a2d334f18">
+            <interfaceMoniker Id="17993731-5672-447a-9952-fdbc4249e8bf" LastKnownName="IStrategy" />
+            <elementDefinition Id="9112aaf8-e766-487b-b80b-f695c127b0c7" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="b8699e6b-78e3-4e0c-93b5-9e3da11f8fb8" name="ConcreteStrategy 2" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="bb0a7675-146b-4f74-ab35-cf359d36bafa" name="ConcreteStrategy" profile="GoFDesignPatterns">
+            <elementDefinition Id="43f6643b-f863-4a82-8a34-ab30fcd02713" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="99c5ece2-484e-4bc5-965c-8793206f7163" />
+        <suppliersInternal>
+          <interfaceRealization Id="48d842d5-6eb3-4b47-8523-d917b4298211">
+            <interfaceMoniker Id="17993731-5672-447a-9952-fdbc4249e8bf" LastKnownName="IStrategy" />
+            <elementDefinition Id="bc1e780e-c1ab-4081-93e9-91084140980e" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="c41b8ff8-71b7-4937-bb69-a02cb0e5d66c" name="DesignPatternDiagrams">
+    <elementDefinition Id="907f02d9-97a4-416e-85de-c96834fd3288" />
+    <profileInstances>
+      <packageHasProfileInstances Id="4d006c31-2bf5-42fb-9079-c9171558c80f">
+        <profileInstance Id="3166c4d6-0d83-45fa-a70b-0b6dadb16ab0" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="85e174b2-3d0b-45ce-b688-d42c306240f3">
+        <profileInstance Id="9a12dfb1-501b-4c02-8ce7-285c1d27ae39" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="10fc1f20-f4f3-4ae6-a786-40b565f43457">
+        <profileInstance Id="37cd7ef6-7c73-4e4e-b5c2-1321db8932bf" name="GoFDesignPatterns">
+          <elementDefinition Id="b2ec555c-7ad5-4568-ac10-ebbefafe538a" />
+        </profileInstance>
+        <elementDefinition Id="74b34c67-f946-48ae-a1f7-ce09ad6bf6e5" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

@@ -1,0 +1,5 @@
+C:\Users\Jonathan_Moore\Desktop\sandassist-71897\Main\Output\Sandcastle.Esent.xml
+C:\Users\Jonathan_Moore\Desktop\sandassist-71897\Main\Output\Sandcastle.Esent.dll
+C:\Users\Jonathan_Moore\Desktop\sandassist-71897\Main\Output\Sandcastle.Esent.pdb
+C:\Users\Jonathan_Moore\Desktop\sandassist-71897\Main\Libraries\Esent\obj\Debug\Sandcastle.Esent.dll
+C:\Users\Jonathan_Moore\Desktop\sandassist-71897\Main\Libraries\Esent\obj\Debug\Sandcastle.Esent.pdb

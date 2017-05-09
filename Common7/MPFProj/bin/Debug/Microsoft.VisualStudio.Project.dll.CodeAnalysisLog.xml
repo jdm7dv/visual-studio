@@ -1,0 +1,424 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio 10.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="10.0">
+ <Targets>
+  <Target Name="C:\Users\Jonathan_Moore\Documents\Visual Studio 2016\MPFProj\bin\Debug\Microsoft.VisualStudio.Project.dll">
+   <Modules>
+    <Module Name="microsoft.visualstudio.project.dll">
+     <Namespaces>
+      <Namespace Name="Microsoft.VisualStudio.Project">
+       <Types>
+        <Type Name="ActiveConfigurationChangedEventArgs" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor(Microsoft.VisualStudio.Shell.Interop.IVsHierarchy)" Kind="Method" Static="False" Accessibility="Assembly" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2013-05-26 00:04:56Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Jonathan_Moore\Documents\Visual Studio 2016\MPFProj" File="StructuresEnums.cs" Line="485">'ActiveConfigurationChangedEventArgs.ActiveConfigurationChangedEventArgs(IVsHierarchy)' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="AssemblyReferenceNode" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#IsAlreadyAdded(Microsoft.VisualStudio.Project.ReferenceNode&amp;)" Kind="Method" Static="False" Accessibility="FamilyOrAssembly" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0#" TypeName="ParameterNamesShouldMatchBaseDeclaration" Category="Microsoft.Naming" CheckId="CA1725" Status="Active" Created="2013-05-26 00:04:56Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="C:\Users\Jonathan_Moore\Documents\Visual Studio 2016\MPFProj" File="AssemblyReferenceNode.cs" Line="258">In member 'AssemblyReferenceNode.IsAlreadyAdded(out ReferenceNode)', change parameter name 'existingReference' to 'existingEquivalentNode' in order to match the identifier as it has been declared in 'ReferenceNode.IsAlreadyAdded(out ReferenceNode)'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ComReferenceNode" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor(Microsoft.VisualStudio.Project.ProjectNode,Microsoft.VisualStudio.Shell.Interop.VSCOMPONENTSELECTORDATA,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DefaultParametersShouldNotBeUsed" Category="Microsoft.Design" CheckId="CA1026" Status="Active" Created="2013-05-26 00:04:56Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Error" Path="C:\Users\Jonathan_Moore\Documents\Visual Studio 2016\MPFProj" File="ComReferenceNode.cs" Line="164">Replace method 'ComReferenceNode.ComReferenceNode(ProjectNode, VSCOMPONENTSELECTORDATA, string)' with an overload that supplies all default arguments.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#EmbedInteropTypes" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_EmbedInteropTypes()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message Id="System.Boolean.TryParse(System.String,System.Boolean@)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2013-05-26 00:04:56Z" FixCategory="NonBreaking">
+               <Issue Name="TryParse" Certainty="95" Level="Warning" Path="C:\Users\Jonathan_Moore\Documents\Visual Studio 2016\MPFProj" File="ComReferenceNode.cs" Line="97">'ComReferenceNode.EmbedInteropTypes.get()' calls 'bool.TryParse(string, out bool)' but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#IsAlreadyAdded(Microsoft.VisualStudio.Project.ReferenceNode&amp;)" Kind="Method" Static="False" Accessibility="FamilyOrAssembly" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0#" TypeName="ParameterNamesShouldMatchBaseDeclaration" Category="Microsoft.Naming" CheckId="CA1725" Status="Active" Created="2013-05-26 00:04:56Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="C:\Users\Jonathan_Moore\Documents\Visual Studio 2016\MPFProj" File="ComReferenceNode.cs" Line="227">In member 'ComReferenceNode.IsAlreadyAdded(out ReferenceNode)', change parameter name 'existingReference' to 'existingEquivalentNode' in order to match the identifier as it has been declared in 'ReferenceNode.IsAlreadyAdded(out ReferenceNode)'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ComReferenceProperties" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ComVisibleTypesShouldBeCreatable" Category="Microsoft.Interoperability" CheckId="CA1409" Status="Active" Created="2013-05-26 00:04:56Z" FixCategory="NonBreaking">
+           <Issue Certainty="90" Level="Error">Provide a public default constructor for 'ComReferenceProperties' if it should be COM-creatable or mark the type as ComVisible(false).</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="HierarchyNode" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#SetProperty(System.Int32,System.Object)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCastUnnecessarily" Category="Microsoft.Performance" CheckId="CA1800" Status="Active" Created="2013-05-26 00:04:56Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="95" Level="Warning" Path="C:\Users\Jonathan_Moore\Documents\Visual Studio 2016\MPFProj" File="HierarchyNode.cs" Line="882">'value', a parameter, is cast to type 'string' multiple times in method 'HierarchyNode.SetProperty(int, object)'. Cache the result of the 'as' operator or direct cast in order to eliminate the redundant castclass instruction.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="IDEBuildLogger" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Messages>
+          <Message TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001" Status="Active" Created="2013-05-26 00:04:56Z" FixCategory="NonBreaking">
+           <Issue Name="NonBreaking" Certainty="95" Level="CriticalError">Implement IDisposable on 'IDEBuildLogger' because it creates members of the following IDisposable types: 'ServiceProvider'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#.ctor(Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane,Microsoft.VisualStudio.Shell.TaskProvider,Microsoft.VisualStudio.Shell.Interop.IVsHierarchy)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2013-05-26 00:04:56Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="C:\Users\Jonathan_Moore\Documents\Visual Studio 2016\MPFProj" File="IDEBuildLogger.cs" Line="137">In method 'IDEBuildLogger.IDEBuildLogger(IVsOutputWindowPane, TaskProvider, IVsHierarchy)', call System.IDisposable.Dispose on object 'this.serviceProvider' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ServiceProvider" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Accessors>
+            <Accessor Name="#get_ServiceProvider()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+             <Messages>
+              <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2013-05-26 00:04:56Z" FixCategory="NonBreaking">
+               <Issue Certainty="75" Level="Warning" Path="C:\Users\Jonathan_Moore\Documents\Visual Studio 2016\MPFProj" File="IDEBuildLogger.cs" Line="66">'IDEBuildLogger.ServiceProvider.get()' appears to have no upstream public or protected callers.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="IReferenceContainer" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#AddReferenceFromSelectorData(Microsoft.VisualStudio.Shell.Interop.VSCOMPONENTSELECTORDATA,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DefaultParametersShouldNotBeUsed" Category="Microsoft.Design" CheckId="CA1026" Status="Active" Created="2013-05-26 00:04:56Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Error">Replace method 'IReferenceContainer.AddReferenceFromSelectorData(VSCOMPONENTSELECTORDATA, string)' with an overload that supplies all default arguments.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ProjectNode" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#GetComponentPickerDirectories()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotRaiseReservedExceptionTypes" Category="Microsoft.Usage" CheckId="CA2201" Status="Active" Created="2013-05-26 00:04:56Z" FixCategory="Breaking">
+             <Issue Name="TooGeneric" Certainty="95" Level="Error" Path="C:\Users\Jonathan_Moore\Documents\Visual Studio 2016\MPFProj" File="ProjectNode.cs" Line="6354">'ProjectNode.GetComponentPickerDirectories()' creates an exception of type 'ApplicationException', an exception type that is not sufficiently specific and should never be raised by user code. If this exception instance might be thrown, use a different exception type.</Issue>
+            </Message>
+            <Message Id="GetReferencePathsForTargetFramework" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2013-05-26 00:04:56Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Jonathan_Moore\Documents\Visual Studio 2016\MPFProj" File="ProjectNode.cs" Line="6354">Correct the spelling of the unrecognized token 'GetReferencePathsForTargetFramework' in the literal '"IVsComponentEnumeratorFactory4.GetReferencePathsForTargetFramework returned null..."'.</Issue>
+            </Message>
+            <Message Id="SCompEnumService" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2013-05-26 00:04:56Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Jonathan_Moore\Documents\Visual Studio 2016\MPFProj" File="ProjectNode.cs" Line="6347">Correct the spelling of the unrecognized token 'SCompEnumService' in the literal '"Missing the SCompEnumService service."'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetProjectOptions(System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DefaultParametersShouldNotBeUsed" Category="Microsoft.Design" CheckId="CA1026" Status="Active" Created="2013-05-26 00:04:56Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Error" Path="C:\Users\Jonathan_Moore\Documents\Visual Studio 2016\MPFProj" File="ProjectNode.cs" Line="2125">Replace method 'ProjectNode.GetProjectOptions(string)' with an overload that supplies all default arguments.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#OnTargetFrameworkMonikerChanged(Microsoft.VisualStudio.Project.ProjectOptions,System.Runtime.Versioning.FrameworkName,System.Runtime.Versioning.FrameworkName)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="options" TypeName="VariableNamesShouldNotMatchFieldNames" Category="Microsoft.Maintainability" CheckId="CA1500" Status="Active" Created="2013-05-26 00:04:56Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="95" Level="Error" Path="C:\Users\Jonathan_Moore\Documents\Visual Studio 2016\MPFProj" File="ProjectNode.cs" Line="2348">'options', a parameter declared in 'ProjectNode.OnTargetFrameworkMonikerChanged(ProjectOptions, FrameworkName, FrameworkName)', has the same name as an instance field on the type. Change the name of one of these items.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SetupProjectGlobalPropertiesThatAllProjectSystemsMustSet()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="Microsoft.VisualStudio.Shell.Interop.IVsShell.GetProperty(System.Int32,System.Object@)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2013-05-26 00:04:56Z" FixCategory="NonBreaking">
+             <Issue Name="HResultOrErrorCode" Certainty="95" Level="Warning" Path="C:\Users\Jonathan_Moore\Documents\Visual Studio 2016\MPFProj" File="ProjectNode.cs" Line="6159">'ProjectNode.SetupProjectGlobalPropertiesThatAllProjectSystemsMustSet()' calls 'IVsShell.GetProperty(int, out object)' but does not use the HRESULT or error code that the method returns. This could lead to unexpected behavior in error conditions or low-resource situations. Use the result in a conditional statement, assign the result to a variable, or pass it as an argument to another method.</Issue>
+            </Message>
+            <Message Id="Microsoft.VisualStudio.Shell.Interop.IVsSolution.GetSolutionInfo(System.String@,System.String@,System.String@)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2013-05-26 00:04:56Z" FixCategory="NonBreaking">
+             <Issue Name="HResultOrErrorCode" Certainty="95" Level="Warning" Path="C:\Users\Jonathan_Moore\Documents\Visual Studio 2016\MPFProj" File="ProjectNode.cs" Line="6118">'ProjectNode.SetupProjectGlobalPropertiesThatAllProjectSystemsMustSet()' calls 'IVsSolution.GetSolutionInfo(out string, out string, out string)' but does not use the HRESULT or error code that the method returns. This could lead to unexpected behavior in error conditions or low-resource situations. Use the result in a conditional statement, assign the result to a variable, or pass it as an argument to another method.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ShowRetargetingDialog()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="SVsFrameworkRetargetingDlg" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2013-05-26 00:04:56Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Jonathan_Moore\Documents\Visual Studio 2016\MPFProj" File="ProjectNode.cs" Line="6423">Correct the spelling of the unrecognized token 'SVsFrameworkRetargetingDlg' in the literal '"Missing SVsFrameworkRetargetingDlg service."'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ReferenceContainerNode" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#AddReferenceFromSelectorData(Microsoft.VisualStudio.Shell.Interop.VSCOMPONENTSELECTORDATA,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DefaultParametersShouldNotBeUsed" Category="Microsoft.Design" CheckId="CA1026" Status="Active" Created="2013-05-26 00:04:56Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Error" Path="C:\Users\Jonathan_Moore\Documents\Visual Studio 2016\MPFProj" File="ReferenceContainerNode.cs" Line="287">Replace method 'ReferenceContainerNode.AddReferenceFromSelectorData(VSCOMPONENTSELECTORDATA, string)' with an overload that supplies all default arguments.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CreateComReferenceNode(Microsoft.VisualStudio.Shell.Interop.VSCOMPONENTSELECTORDATA,System.String)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DefaultParametersShouldNotBeUsed" Category="Microsoft.Design" CheckId="CA1026" Status="Active" Created="2013-05-26 00:04:56Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Error" Path="C:\Users\Jonathan_Moore\Documents\Visual Studio 2016\MPFProj" File="ReferenceContainerNode.cs" Line="530">Replace method 'ReferenceContainerNode.CreateComReferenceNode(VSCOMPONENTSELECTORDATA, string)' with an overload that supplies all default arguments.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CreateFileComponent(Microsoft.VisualStudio.Shell.Interop.VSCOMPONENTSELECTORDATA,System.String)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DefaultParametersShouldNotBeUsed" Category="Microsoft.Design" CheckId="CA1026" Status="Active" Created="2013-05-26 00:04:56Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Error" Path="C:\Users\Jonathan_Moore\Documents\Visual Studio 2016\MPFProj" File="ReferenceContainerNode.cs" Line="392">Replace method 'ReferenceContainerNode.CreateFileComponent(VSCOMPONENTSELECTORDATA, string)' with an overload that supplies all default arguments.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CreateReferenceNode(Microsoft.VisualStudio.Shell.Interop.VSCOMPONENTSELECTORDATA,System.String)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DefaultParametersShouldNotBeUsed" Category="Microsoft.Design" CheckId="CA1026" Status="Active" Created="2013-05-26 00:04:56Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Error" Path="C:\Users\Jonathan_Moore\Documents\Visual Studio 2016\MPFProj" File="ReferenceContainerNode.cs" Line="351">Replace method 'ReferenceContainerNode.CreateReferenceNode(VSCOMPONENTSELECTORDATA, string)' with an overload that supplies all default arguments.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ReferenceNode" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#IsAlreadyAdded(Microsoft.VisualStudio.Project.ReferenceNode&amp;)" Kind="Method" Static="False" Accessibility="FamilyOrAssembly" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0#" TypeName="AvoidOutParameters" Category="Microsoft.Design" CheckId="CA1021" Status="Active" Created="2013-05-26 00:04:56Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="Warning" Path="C:\Users\Jonathan_Moore\Documents\Visual Studio 2016\MPFProj" File="ReferenceNode.cs" Line="258">Consider a design that does not require that 'existingEquivalentNode' be an out parameter.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="SingleFileGeneratorNodeProperties" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#CustomTool" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#set_CustomTool(System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message TypeName="TestForEmptyStringsUsingStringLength" Category="Microsoft.Performance" CheckId="CA1820" Status="Active" Created="2013-05-26 00:04:56Z" FixCategory="NonBreaking">
+               <Issue Name="IsNullOrEmpty" Certainty="95" Level="Warning" Path="C:\Users\Jonathan_Moore\Documents\Visual Studio 2016\MPFProj" File="NodeProperties.cs" Line="485">Replace the call to 'string.operator !=(string, string)' in 'SingleFileGeneratorNodeProperties.CustomTool.set(string)' with a call to 'String.IsNullOrEmpty'.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#CustomToolNamespace" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#set_CustomToolNamespace(System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message TypeName="TestForEmptyStringsUsingStringLength" Category="Microsoft.Performance" CheckId="CA1820" Status="Active" Created="2013-05-26 00:04:56Z" FixCategory="NonBreaking">
+               <Issue Name="IsNullOrEmpty" Certainty="95" Level="Warning" Path="C:\Users\Jonathan_Moore\Documents\Visual Studio 2016\MPFProj" File="NodeProperties.cs" Line="508">Replace the call to 'string.operator !=(string, string)' in 'SingleFileGeneratorNodeProperties.CustomToolNamespace.set(string)' with a call to 'String.IsNullOrEmpty'.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="UIThread" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#IsUnitTest" Kind="Property" Static="True" Accessibility="Assembly" ExternallyVisible="False">
+           <Accessors>
+            <Accessor Name="#set_IsUnitTest(System.Boolean)" Kind="Method" Static="True" Accessibility="Assembly" ExternallyVisible="False">
+             <Messages>
+              <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2013-05-26 00:04:56Z" FixCategory="NonBreaking">
+               <Issue Certainty="75" Level="Warning">'UIThread.IsUnitTest.set(bool)' appears to have no upstream public or protected callers.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="AvoidOutParameters" Category="Microsoft.Design" CheckId="CA1021">
+   <Name>Avoid out parameters</Name>
+   <Description>Using out parameters might indicate a design flaw. Although there are legitimate times to use out parameters, their use frequently indicates a design that does not conform to the design guidelines for managed code.</Description>
+   <Resolution Name="Default">Consider a design that does not require that {0} be an out parameter.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182131(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="50">Warning</MessageLevel>
+   <File Name="designrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811">
+   <Name>Avoid uncalled private code</Name>
+   <Description>There is uncalled code that is not externally visible and is not a known runtime entry point. If this violation fires in error, please send a problem report to the Visual Studio Code Analysis team.</Description>
+   <Resolution Name="Default">{0} appears to have no upstream public or protected callers.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182264(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="ComVisibleTypesShouldBeCreatable" Category="Microsoft.Interoperability" CheckId="CA1409">
+   <Name>COM visible types should be creatable</Name>
+   <Description>Types with no public default constructor are not COM-creatable. COM does not support parameterized object construction. A type was detected with a public parameterized constructor but no public default constructor. This type is not creatable by COM. If there is an alternate method for creating and passing object instances to COM clients (through a method on another type, for example), this might not be a problem.</Description>
+   <Resolution Name="Default">Provide a public default constructor for {0} if it should be COM-creatable or mark the type as ComVisible(false).</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182203(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="90">Error</MessageLevel>
+   <File Name="interoperabilityrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="DefaultParametersShouldNotBeUsed" Category="Microsoft.Design" CheckId="CA1026">
+   <Name>Default parameters should not be used</Name>
+   <Description>Some programming languages do not support default parameters. Replace default parameters with method overloads that supply the default argument.</Description>
+   <Resolution Name="Default">Replace method {0} with an overload that supplies all default arguments.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182135(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Error</MessageLevel>
+   <File Name="designrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000">
+   <Name>Dispose objects before losing scope</Name>
+   <Description>If a disposable object is not explicitly disposed before all references to it are out of scope, the object will be disposed at some indeterminate time when the garbage collector runs the finalizer of the object. Because an exceptional event might occur that will prevent the finalizer of the object from running, the object should be explicitly disposed instead.</Description>
+   <Resolution Name="ExceptionEdge">In method {0}, object {1} is not disposed along all exception paths. Call System.IDisposable.Dispose on object {1} before all references to it are out of scope.</Resolution>
+   <Resolution Name="NonExceptionEdge">In method {0}, call System.IDisposable.Dispose on object {1} before all references to it are out of scope.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182289(VS.100).aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotCastUnnecessarily" Category="Microsoft.Performance" CheckId="CA1800">
+   <Name>Do not cast unnecessarily</Name>
+   <Description>Avoid duplicate casts where possible, since there is a cost associated with them.</Description>
+   <Resolution Name="Local">{0}, a variable, is cast to type {1} multiple times in method {2}. Cache the result of the 'as' operator or direct cast in order to eliminate the redundant {3} instruction.</Resolution>
+   <Resolution Name="Parameter">{0}, a parameter, is cast to type {1} multiple times in method {2}. Cache the result of the 'as' operator or direct cast in order to eliminate the redundant {3} instruction.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182271(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806">
+   <Name>Do not ignore method results</Name>
+   <Description>The result of methods that return new instances of strings should be assigned to a variable and subsequently used. If the result of a method that creates a new object, such as String.ToLower(), is not assigned to a variable, the call is wasted.</Description>
+   <Resolution Name="HResultOrErrorCode">{0} calls {1} but does not use the HRESULT or error code that the method returns. This could lead to unexpected behavior in error conditions or low-resource situations. Use the result in a conditional statement, assign the result to a variable, or pass it as an argument to another method.</Resolution>
+   <Resolution Name="TryParse">{0} calls {1} but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182273(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="usagerules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotRaiseReservedExceptionTypes" Category="Microsoft.Usage" CheckId="CA2201">
+   <Name>Do not raise reserved exception types</Name>
+   <Description>User code should not create and raise exceptions of certain types that are reserved by the runtime or which are of a too general exception type. Exception types that are too general include Exception, SystemException, and ApplicationException. Exception types that are reserved by the runtime include ThreadAbortException, OutOfMemoryException, ExecutionEngineException, and IndexOutOfRangeException.</Description>
+   <Resolution Name="Reserved">{0} creates an exception of type {1}, an exception type that is reserved by the runtime and should never be raised by managed code. If this exception instance might be thrown, use a different exception type.</Resolution>
+   <Resolution Name="TooGeneric">{0} creates an exception of type {1}, an exception type that is not sufficiently specific and should never be raised by user code. If this exception instance might be thrown, use a different exception type.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182338(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="usagerules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204">
+   <Name>Literals should be spelled correctly</Name>
+   <Description>This rule parses the literal string into words, tokenizing compound words, and checks the spelling of each word/token.</Description>
+   <Resolution Name="Default">Correct the spelling of the unrecognized token '{0}' in the literal '{1}'.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/bb264488(VS.100).aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="ParameterNamesShouldMatchBaseDeclaration" Category="Microsoft.Naming" CheckId="CA1725">
+   <Name>Parameter names should match base declaration</Name>
+   <Description>For usability reasons, parameter names in overridden methods should match those of the base declaration.</Description>
+   <Resolution Name="Default">In member {0}, change parameter name {1} to {2} in order to match the identifier as it has been declared in {3}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182251(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="namingrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="TestForEmptyStringsUsingStringLength" Category="Microsoft.Performance" CheckId="CA1820">
+   <Name>Test for empty strings using string length</Name>
+   <Description>To test for empty strings, check if String.Length is equal to zero. Constructs such as "".Equals(someString) and String.Empty.Equals(someString) are less efficient than testing the string length. Replace these with checks for someString.Length == 0.</Description>
+   <Resolution Name="IsNullOrEmpty">Replace the call to {0} in {1} with a call to 'String.IsNullOrEmpty'.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182279(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001">
+   <Name>Types that own disposable fields should be disposable</Name>
+   <Description>Types that declare disposable members should also implement IDisposable. If the type does not own any unmanaged resources, do not implement a finalizer on it.</Description>
+   <Resolution Name="NonBreaking">Implement IDisposable on {0} because it creates members of the following IDisposable types: {1}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182172(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="designrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="VariableNamesShouldNotMatchFieldNames" Category="Microsoft.Maintainability" CheckId="CA1500">
+   <Name>Variable names should not match field names</Name>
+   <Description>Instance field and variable names should not be identical within the same scope.</Description>
+   <Resolution Name="Local">{0}, a variable declared in {1}, has the same name as an instance field on the type. Change the name of one of these items.</Resolution>
+   <Resolution Name="Parameter">{0}, a parameter declared in {1}, has the same name as an instance field on the type. Change the name of one of these items.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182216(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="maintainabilityrules.dll" Version="10.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Category</String>
+  <String Key="Certainty">Certainty</String>
+  <String Key="CollapseAll">Collapse All</String>
+  <String Key="CheckId">Check Id</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">error(s)</String>
+  <String Key="ExpandAll">Expand All</String>
+  <String Key="Help">Help</String>
+  <String Key="Line">Line</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Location not stored in Pdb]</String>
+  <String Key="Project">Project</String>
+  <String Key="Resolution">Resolution</String>
+  <String Key="Rule">Rule</String>
+  <String Key="RuleFile">Rule File</String>
+  <String Key="RuleDescription">Rule Description</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Target</String>
+  <String Key="Warning">Warning</String>
+  <String Key="Warnings">warning(s)</String>
+  <String Key="ReportTitle">Code Analysis Report</String>
+ </Localized>
+ <Exceptions>
+  <Exception Keyword="CA0060" Kind="Engine" TreatAsWarning="True">
+   <Type>Microsoft.FxCop.Sdk.FxCopException</Type>
+   <ExceptionMessage>The indirectly-referenced assembly 'EnvDTE, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' could not be found. This assembly is not required for analysis, however, analysis results could be incomplete. This assembly was referenced by: C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PublicAssemblies\VSLangProj.dll.</ExceptionMessage>
+  </Exception>
+ </Exceptions>
+</FxCopReport>

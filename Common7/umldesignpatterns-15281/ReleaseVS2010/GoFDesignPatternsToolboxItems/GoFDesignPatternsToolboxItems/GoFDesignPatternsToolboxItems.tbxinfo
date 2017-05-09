@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<customToolboxItems xmlns="http://schemas.microsoft.com/visualstudio/2010/ArchitectureTools/CustomToolboxItems"> 
+  
+  <!-- NO - what is the order? Note the order here is the order the items appear in the toolbox -->
+  
+  <!-- Creational Patterns -->
+  
+  <!--AbstractFactory-->
+  <customToolboxItem fileName="AbstractFactory.classdiagram">
+    <displayName>
+      <value>AbstractFactory</value>
+    </displayName>
+    <tabName>
+      <value>Creational Patterns</value>
+    </tabName>
+    <image>
+      <bmp fileName="DesignPatternIcon.bmp"/>
+    </image>
+    <f1Keyword>
+      <value>AbstractFactoryHelp</value>
+    </f1Keyword>
+    <tooltip>
+      <value>Groups object factories that have a common theme.</value>
+    </tooltip>
+  </customToolboxItem>
+
+  <!--Builder-->
+  <customToolboxItem fileName="Builder.classdiagram">
+    <displayName>
+      <value>Builder</value>
+    </displayName>
+    <tabName>
+      <value>Creational Patterns</value>
+    </tabName>
+    <image>
+      <bmp fileName="DesignPatternIcon.bmp"/>
+    </image>
+    <f1Keyword>
+      <value>BuilderHelp</value>
+    </f1Keyword>
+    <tooltip>
+      <value>Constructs complex objects by separating construction and representation.</value>
+    </tooltip>
+  </customToolboxItem>
+
+  <!--Factory-->
+  <customToolboxItem fileName="Factory.classdiagram">
+    <displayName>
+    <value>Factory</value>
+  </displayName>
+  <tabName>
+    <value>Creational Patterns</value>
+  </tabName>
+  <image>
+    <bmp fileName="DesignPatternIcon.bmp"/>
+  </image>
+  <f1Keyword>
+    <value>FactoryHelp</value>
+  </f1Keyword>
+  <tooltip>
+    <value>Creates objects without specifying the exact class to create.</value>
+  </tooltip>
+  </customToolboxItem>
+
+  <!--Prototype-->
+  <customToolboxItem fileName="Prototype.classdiagram">
+    <displayName>
+      <value>Prototype</value>
+    </displayName>
+    <tabName>
+      <value>Creational Patterns</value>
+    </tabName>
+    <image>
+      <bmp fileName="DesignPatternIcon.bmp"/>
+    </image>
+    <f1Keyword>
+      <value>PrototypeHelp</value>
+    </f1Keyword>
+    <tooltip>
+      <value>Creates objects by cloning an existing object.</value>
+    </tooltip>
+  </customToolboxItem>
+
+  <!--Singleton-->
+  <customToolboxItem fileName="Singleton.classdiagram">
+    <displayName>
+      <value>Singleton</value>
+    </displayName>
+    <tabName>
+      <value>Creational Patterns</value>
+    </tabName>
+    <image>
+      <bmp fileName="DesignPatternIcon.bmp"/>
+    </image>
+    <f1Keyword>
+      <value>SingletonHelp</value>
+    </f1Keyword>
+    <tooltip>
+      <value>Ensures that only one instance of a class is created.</value>
+    </tooltip>
+  </customToolboxItem>
+
+  <!--ObjectPool-->
+  <!-- Not a GoF pattern, but fits into the Creational patterns -->
+  <customToolboxItem fileName="ObjectPool.classdiagram">
+    <displayName>
+      <value>Object Pool</value>
+    </displayName>
+    <tabName>
+      <value>Creational Patterns</value>
+    </tabName>
+    <image>
+      <bmp fileName="DesignPatternIcon.bmp"/>
+    </image>
+    <f1Keyword>
+      <value>ObjectPoolHelp</value>
+    </f1Keyword>
+    <tooltip>
+      <value>Limits the use of a scarce object resource.</value>
+    </tooltip>
+  </customToolboxItem>
+ 
+  <!--Structural patterns-->
+  
+  <!--Adapter-->
+  <customToolboxItem fileName="Adapter.classdiagram">
+    <displayName>
+      <value>Adapter</value>
+    </displayName>
+    <tabName>
+      <value>Structural Patterns</value>
+    </tabName>
+    <image>
+      <bmp fileName="DesignPatternIcon.bmp"/>
+    </image>
+    <f1Keyword>
+      <value>AdapterHelp</value>
+    </f1Keyword>
+    <tooltip>
+      <value>Allows classes with incompatible interfaces to work together by wrapping its own interface around that of an already existing class.</value>
+    </tooltip>
+  </customToolboxItem>
+  
+  <!--Bridge-->
+  <customToolboxItem fileName="Bridge.classdiagram">
+    <displayName>
+      <value>Bridge</value>
+    </displayName>
+    <tabName>
+      <value>Structural Patterns</value>
+    </tabName>
+    <image>
+      <bmp fileName="DesignPatternIcon.bmp"/>
+    </image>
+    <f1Keyword>
+      <value>BridgeHelp</value>
+    </f1Keyword>
+    <tooltip>
+      <value>Decouples an abstraction from its implementation so that the two can vary independently.</value>
+    </tooltip>
+  </customToolboxItem>
+  
+  <!--Composite-->
+  <customToolboxItem fileName="Composite.classdiagram">
+    <displayName>
+      <value>Composite</value>
+    </displayName>
+    <tabName>
+      <value>Structural Patterns</value>
+    </tabName>
+    <image>
+      <bmp fileName="DesignPatternIcon.bmp"/>
+    </image>
+    <f1Keyword>
+      <value>CompositeHelp</value>
+    </f1Keyword>
+    <tooltip>
+      <value>Composes zero-or-more similar objects so that they can be manipulated as one object.</value>
+    </tooltip>
+  </customToolboxItem>
+
+  <!--Decorator-->
+  <customToolboxItem fileName="Decorator.classdiagram">
+    <displayName>
+      <value>Decorator</value>
+    </displayName>
+    <tabName>
+      <value>Structural Patterns</value>
+    </tabName>
+    <image>
+      <bmp fileName="DesignPatternIcon.bmp"/>
+    </image>
+    <f1Keyword>
+      <value>DecoratorHelp</value>
+    </f1Keyword>
+    <tooltip>
+      <value>Dynamically adds/overrides behaviour in an existing method of an object.</value>
+    </tooltip>
+  </customToolboxItem>
+  
+  <!--Façade-->
+  <customToolboxItem fileName="Facade.classdiagram">
+    <displayName>
+      <value>Facade</value>
+    </displayName>
+    <tabName>
+      <value>Structural Patterns</value>
+    </tabName>
+    <image>
+      <bmp fileName="DesignPatternIcon.bmp"/>
+    </image>
+    <f1Keyword>
+      <value>FacadeHelp</value>
+    </f1Keyword>
+    <tooltip>
+      <value>Provides a simplified interface to a large body of code.</value>
+    </tooltip>
+  </customToolboxItem>
+
+  <!--Flyweight-->
+  <customToolboxItem fileName="Flyweight.classdiagram">
+    <displayName>
+      <value>Flyweight</value>
+    </displayName>
+    <tabName>
+      <value>Structural Patterns</value>
+    </tabName>
+    <image>
+      <bmp fileName="DesignPatternIcon.bmp"/>
+    </image>
+    <f1Keyword>
+      <value>FlyweightHelp</value>
+    </f1Keyword>
+    <tooltip>
+      <value>Reduces the cost of creating and manipulating a large number of similar objects.</value>
+    </tooltip>
+  </customToolboxItem>
+
+  <!--Iterator-->
+  <customToolboxItem fileName="Iterator.classdiagram">
+    <displayName>
+      <value>Iterator</value>
+    </displayName>
+    <tabName>
+      <value>Structural Patterns</value>
+    </tabName>
+    <image>
+      <bmp fileName="DesignPatternIcon.bmp"/>
+    </image>
+    <f1Keyword>
+      <value>IteratorHelp</value>
+    </f1Keyword>
+    <tooltip>
+      <value>Allows independent sequential access to a collection.</value>
+    </tooltip>
+  </customToolboxItem>
+
+  <!-- Behavioural patterns -->
+
+  <!--Chain of Responsibility-->
+  <customToolboxItem fileName="ChainOfResponsibility.classdiagram">
+    <displayName>
+      <value>Chain Of Responsibility</value>
+    </displayName>
+    <tabName>
+      <value>Behavioural Patterns</value>
+    </tabName>
+    <image>
+      <bmp fileName="DesignPatternIcon.bmp"/>
+    </image>
+    <f1Keyword>
+      <value>ChainOfResponsibilityHelp</value>
+    </f1Keyword>
+    <tooltip>
+      <value>Delegates commands to a chain of processing objects.</value>
+    </tooltip>
+  </customToolboxItem>
+  
+  <!--Command-->
+  <customToolboxItem fileName="Command.classdiagram">
+    <displayName>
+      <value>Command</value>
+    </displayName>
+    <tabName>
+      <value>Behavioural Patterns</value>
+    </tabName>
+    <image>
+      <bmp fileName="DesignPatternIcon.bmp"/>
+    </image>
+    <f1Keyword>
+      <value>CommandObserverHelp</value>
+    </f1Keyword>
+    <tooltip>
+      <value>Creates objects which encapsulate actions and parameters.</value>
+    </tooltip>
+  </customToolboxItem>
+
+  <!--Interpreter-->
+  <!--Iterator-->
+  
+  <!--Mediator-->
+  <customToolboxItem fileName="Mediator.classdiagram">
+    <displayName>
+      <value>Mediator</value>
+    </displayName>
+    <tabName>
+      <value>Behavioural Patterns</value>
+    </tabName>
+    <image>
+      <bmp fileName="DesignPatternIcon.bmp"/>
+    </image>
+    <f1Keyword>
+      <value>MediatorHelp</value>
+    </f1Keyword>
+    <tooltip>
+      <value>Allows loose coupling between classes by being the only class that has detailed knowledge of their methods.</value>
+    </tooltip>
+  </customToolboxItem>
+  
+  <!--Memento-->
+  
+  <!--Observer-->
+  <customToolboxItem fileName="Observer.classdiagram">
+    <displayName>
+      <value>Observer</value>
+    </displayName>
+    <tabName>
+      <value>Behavioural Patterns</value>
+    </tabName>
+    <image>
+      <bmp fileName="DesignPatternIcon.bmp"/>
+    </image>
+    <f1Keyword>
+      <value>ObserverHelp</value>
+    </f1Keyword>
+    <tooltip>
+      <value>Allows objects to dynamically register dependencies between objects to receive notifications.</value>
+    </tooltip>
+  </customToolboxItem>
+
+  <!--State-->
+  <customToolboxItem fileName="State.classdiagram">
+    <displayName>
+      <value>State</value>
+    </displayName>
+    <tabName>
+      <value>Behavioural Patterns</value>
+    </tabName>
+    <image>
+      <bmp fileName="DesignPatternIcon.bmp"/>
+    </image>
+    <f1Keyword>
+      <value>StateHelp</value>
+    </f1Keyword>
+    <tooltip>
+      <value>Allows an object to alter its behaviour when its internal state changes.</value>
+    </tooltip>
+  </customToolboxItem>
+  
+  <!--Strategy-->
+  <customToolboxItem fileName="Strategy.classdiagram">
+    <displayName>
+      <value>Strategy</value>
+    </displayName>
+    <tabName>
+      <value>Behavioural Patterns</value>
+    </tabName>
+    <image>
+      <bmp fileName="DesignPatternIcon.bmp"/>
+    </image>
+    <f1Keyword>
+      <value>StrategyHelp</value>
+    </f1Keyword>
+    <tooltip>
+      <value>Allows one of a family of algorithms to be selected on-the-fly at runtime.</value>
+    </tooltip>
+  </customToolboxItem>
+
+  <!--Template Method-->
+  <customToolboxItem fileName="Template.classdiagram">
+    <displayName>
+      <value>Template</value>
+    </displayName>
+    <tabName>
+      <value>Behavioural Patterns</value>
+    </tabName>
+    <image>
+      <bmp fileName="DesignPatternIcon.bmp"/>
+    </image>
+    <f1Keyword>
+      <value>TemplateHelp</value>
+    </f1Keyword>
+    <tooltip>
+      <value>Allows partial algorithms to be completed by concrete classes as required.</value>
+    </tooltip>
+  </customToolboxItem>
+  
+  <!--Visitor-->
+  <customToolboxItem fileName="Visitor.classdiagram">
+    <displayName>
+      <value>Visitor</value>
+    </displayName>
+    <tabName>
+      <value>Behavioural Patterns</value>
+    </tabName>
+    <image>
+      <bmp fileName="DesignPatternIcon.bmp"/>
+    </image>
+    <f1Keyword>
+      <value>VisitorHelp</value>
+    </f1Keyword>
+    <tooltip>
+      <value>Separates an algorithm from an object structure by moving the hierarchy of methods into one object.</value>
+    </tooltip>
+  </customToolboxItem>
+
+</customToolboxItems> 

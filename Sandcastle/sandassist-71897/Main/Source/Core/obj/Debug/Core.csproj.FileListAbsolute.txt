@@ -1,0 +1,6 @@
+C:\Users\Jonathan_Moore\Desktop\sandassist-71897\Main\Output\Sandcastle.Core.dll
+C:\Users\Jonathan_Moore\Desktop\sandassist-71897\Main\Output\Sandcastle.Core.pdb
+C:\Users\Jonathan_Moore\Desktop\sandassist-71897\Main\Source\Core\obj\Debug\Sandcastle.Properties.Resources.resources
+C:\Users\Jonathan_Moore\Desktop\sandassist-71897\Main\Source\Core\obj\Debug\Core.csproj.GenerateResource.Cache
+C:\Users\Jonathan_Moore\Desktop\sandassist-71897\Main\Source\Core\obj\Debug\Sandcastle.Core.dll
+C:\Users\Jonathan_Moore\Desktop\sandassist-71897\Main\Source\Core\obj\Debug\Sandcastle.Core.pdb

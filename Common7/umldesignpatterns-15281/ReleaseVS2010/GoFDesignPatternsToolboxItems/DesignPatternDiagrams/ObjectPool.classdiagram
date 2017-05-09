@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="975bb84b-69c3-4845-87a2-67bbe43159c0" name="Object Pool" linkedPackageId="02cb3751-58a4-44d5-b044-17d98c5d11a7" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="830bf4cb-c467-41c7-be9d-5643e6ea7c8a">
+      <profileInstance Id="52dca38a-2de2-445a-834e-a844d567048c" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="3c587130-32f1-447f-ad4d-0ec683084cce">
+      <profileInstance Id="e5ad2972-8100-4a3a-9651-c18142a0644d" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="97c6ed80-5fdd-445b-adb8-689543b0374a">
+      <profileInstance Id="6f0fd755-4521-428c-9574-ce9ffe8dccc3" name="GoFDesignPatterns">
+        <elementDefinition Id="b2ec555c-7ad5-4568-ac10-ebbefafe538a" />
+      </profileInstance>
+      <elementDefinition Id="74b34c67-f946-48ae-a1f7-ce09ad6bf6e5" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="b0aba2f5-243c-49a0-9712-e09c8f884d33" name="Client" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="2e097af8-cbaa-4ec9-bcb7-be1270830d02" />
+        <targetEnds>
+          <association Id="723ca1a1-4e47-4def-9440-a11a0eeceecc" isDerived="false" sourceEndRoleName="Client" targetEndRoleName="ReusablePool" isLeaf="false" name="requests" isAbstract="false">
+            <classMoniker Id="2f39b81f-fd03-4ffb-964a-b24ae6eafb37" LastKnownName="ReusablePool" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1b132b21-d4b4-4b9d-a027-a70b8fd3406d" name="Client" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="43135d69-d26c-4c21-bd52-7b481b7c08a1" name="Lower" value="*">
+                      <elementDefinition Id="b76bc3dd-e91b-4d27-92ca-e583c51afe1e" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="455c178f-0170-438e-9aa1-b77b3ef8a34c" name="Upper" value="*">
+                      <elementDefinition Id="5e9ce895-f663-407e-9c8b-2c7141174a48" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="fda1249e-5193-4ead-a56b-46bac9a0b9b2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="62aabc15-cee1-4afa-ae7a-0718d9c1cf63" name="ReusablePool" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6fa3031c-c0fe-471e-a81a-597a63733237" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a70b4881-c242-4fc4-bb4f-9122155599f0" />
+          </association>
+          <association Id="0705a7f1-1963-437a-a3fb-3551ababab86" isDerived="false" sourceEndRoleName="Client" targetEndRoleName="Reusable" isLeaf="false" name="uses" isAbstract="false">
+            <classMoniker Id="783b39e3-c17f-47c9-ab33-29d37186d919" LastKnownName="Reusable" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3bc6de29-d40c-4048-9bb4-6146b1b2fe02" name="Client" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="92f26af1-0bbb-4abe-8a0b-e38d24d27f7f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d06e18f2-7c35-4759-8f2f-bfcfc66550ec" name="Reusable" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="76f77413-4df4-4256-8d1d-bb374345d58a" name="Lower" value="*">
+                      <elementDefinition Id="0c52bc63-8428-4732-8dd3-abf2abba4ce5" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="63aacbe3-6989-41be-8fe6-ff1c28748fde" name="Upper" value="*">
+                      <elementDefinition Id="7b77a31e-0eb9-490c-ba8e-e1f143e410af" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="61cf12c3-6c5d-4f52-8ba4-b6577ce10180" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c2f6b37c-85a0-4a4d-bbb9-72e1ae466743" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="2f39b81f-fd03-4ffb-964a-b24ae6eafb37" name="ReusablePool" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="2d426e33-135b-4d87-9115-09239f59dd66" name="ReusablePool" profile="GoFDesignPatterns">
+            <elementDefinition Id="190d0c27-cacd-4e3b-b017-ccff68d8d99d" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="1b1a76c1-5312-4694-91ac-291754c9d225" />
+        <targetEnds>
+          <association Id="46ef1bd4-c14b-46ce-ab29-f617aeb2ce91" isDerived="false" sourceEndRoleName="ReusablePool" targetEndRoleName="Reusable" isLeaf="false" isAbstract="false">
+            <classMoniker Id="783b39e3-c17f-47c9-ab33-29d37186d919" LastKnownName="Reusable" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="55ab297a-80d7-4643-aee7-693fdb6bbfa5" name="ReusablePool" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="6f0f981f-f715-4263-89db-8e05fdd89d27" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f73e2fcc-5ff6-4d6d-aa4f-68d985275f46" name="Reusable" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="3e3ac193-6560-4d17-aaca-fdcc5229a2fd" name="Lower" value="*">
+                      <elementDefinition Id="0199f600-bd49-4d34-9a9f-985712ad5f3d" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="325e8ea5-f9fb-4f7a-b880-0606d8192428" name="Upper" value="*">
+                      <elementDefinition Id="185f854a-17ed-4df8-ac77-a5a1dc828a9f" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="393111da-ba6e-46bf-a15a-7e8e2f1b6cb9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="8f17f016-dafa-4b55-9cd8-80b884878db5" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="10e77155-cc53-4f01-8e18-487c3b75b98e" name="maxInstances" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="749182c7-5b83-4eb5-b701-45c2c9252b0c" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="4caa6033-5012-4163-9e96-df83479d7637" name="getInstance" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="99be880e-c361-479a-9c76-730fd566462a" />
+          </operation>
+          <operation Id="99afb655-8deb-4536-82dd-c8ca603e71fd" name="acquireReusable" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="4c7735fd-2f5b-4e65-aac0-55f4b7f5958a" />
+          </operation>
+          <operation Id="4b1a47fd-7015-4a92-bbf7-ccdb8dfdfc57" name="releaseReusable" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="31aedb72-60c7-4d1a-be1a-94dd9985c21d" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="783b39e3-c17f-47c9-ab33-29d37186d919" name="Reusable" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="9520e4c6-4a10-4752-8789-b9283f3dabb3" name="Reusable" profile="GoFDesignPatterns">
+            <elementDefinition Id="f8570105-046d-4578-957b-c4ed0dbdd0c9" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="04407c6f-3221-4539-88e8-00fc8f6f37e0" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="02cb3751-58a4-44d5-b044-17d98c5d11a7" name="DesignPatternDiagrams">
+    <elementDefinition Id="907f02d9-97a4-416e-85de-c96834fd3288" />
+  </package>
+</logicalClassDesignerModel>

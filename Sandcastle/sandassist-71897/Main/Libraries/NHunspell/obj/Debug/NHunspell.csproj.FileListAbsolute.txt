@@ -1,0 +1,8 @@
+C:\Users\Jonathan_Moore\Desktop\sandassist-71897\Main\Output\Sandcastle.NHunspell.dll.config
+C:\Users\Jonathan_Moore\Desktop\sandassist-71897\Main\Output\Sandcastle.NHunspell.xml
+C:\Users\Jonathan_Moore\Desktop\sandassist-71897\Main\Output\Sandcastle.NHunspell.dll
+C:\Users\Jonathan_Moore\Desktop\sandassist-71897\Main\Output\Sandcastle.NHunspell.pdb
+C:\Users\Jonathan_Moore\Desktop\sandassist-71897\Main\Libraries\NHunspell\obj\Debug\NHunspell.Resources.resources
+C:\Users\Jonathan_Moore\Desktop\sandassist-71897\Main\Libraries\NHunspell\obj\Debug\NHunspell.csproj.GenerateResource.Cache
+C:\Users\Jonathan_Moore\Desktop\sandassist-71897\Main\Libraries\NHunspell\obj\Debug\Sandcastle.NHunspell.dll
+C:\Users\Jonathan_Moore\Desktop\sandassist-71897\Main\Libraries\NHunspell\obj\Debug\Sandcastle.NHunspell.pdb

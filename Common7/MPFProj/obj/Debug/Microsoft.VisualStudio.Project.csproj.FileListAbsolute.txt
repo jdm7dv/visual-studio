@@ -1,0 +1,11 @@
+C:\Users\Jonathan_Moore\Documents\Visual Studio 2016\MPFProj\bin\Debug\Microsoft.VisualStudio.Project.dll
+C:\Users\Jonathan_Moore\Documents\Visual Studio 2016\MPFProj\bin\Debug\Microsoft.VisualStudio.Project.pdb
+C:\Users\Jonathan_Moore\Documents\Visual Studio 2016\MPFProj\bin\Debug\Microsoft.VisualStudio.Project.dll.CodeAnalysisLog.xml
+C:\Users\Jonathan_Moore\Documents\Visual Studio 2016\MPFProj\bin\Debug\Microsoft.VisualStudio.Project.dll.lastcodeanalysissucceeded
+C:\Users\Jonathan_Moore\Documents\Visual Studio 2016\MPFProj\bin\Debug\Microsoft.VisualStudio.Settings.dll
+C:\Users\Jonathan_Moore\Documents\Visual Studio 2016\MPFProj\bin\Debug\Microsoft.VisualStudio.Settings.xml
+C:\Users\Jonathan_Moore\Documents\Visual Studio 2016\MPFProj\obj\Debug\Microsoft.VisualStudio.Project.csprojResolveAssemblyReference.cache
+C:\Users\Jonathan_Moore\Documents\Visual Studio 2016\MPFProj\obj\Debug\Microsoft.VisualStudio.Project.VisualStudio.Project.resources
+C:\Users\Jonathan_Moore\Documents\Visual Studio 2016\MPFProj\obj\Debug\Microsoft.VisualStudio.Project.csproj.GenerateResource.Cache
+C:\Users\Jonathan_Moore\Documents\Visual Studio 2016\MPFProj\obj\Debug\Microsoft.VisualStudio.Project.dll
+C:\Users\Jonathan_Moore\Documents\Visual Studio 2016\MPFProj\obj\Debug\Microsoft.VisualStudio.Project.pdb

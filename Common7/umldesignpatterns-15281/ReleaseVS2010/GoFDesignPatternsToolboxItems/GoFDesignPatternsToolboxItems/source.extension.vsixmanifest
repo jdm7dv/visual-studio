@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Vsix xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="1.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2010">
+  <Identifier Id="GoFDesignPatternsToolboxItems.Microsoft.59bcf2bd-f786-4f6d-a030-4d8491382943">
+    <Name>Design Patterns UML Toolbox</Name>
+    <Author>Giles Davies</Author>
+    <Version>1.0</Version>
+    <Description xml:space="preserve">UML toolbox items representing the Gang of Four design patterns.split into Creational, Structural and Behavioural patterns.</Description>
+    <Locale>1033</Locale>
+    <MoreInfoUrl>http://umldesignpatterns.codeplex.com/</MoreInfoUrl>
+    <License>Licence.txt</License>
+    <GettingStartedGuide>http://umldesignpatterns.codeplex.com/</GettingStartedGuide>
+    <Icon>DesignPatternIcon.bmp</Icon>
+    <PreviewImage>DesignPatternImage.bmp</PreviewImage>
+    <SupportedProducts>
+      <VisualStudio Version="10.0">
+        <Edition>Ultimate</Edition>
+        <Edition>Premium</Edition>
+      </VisualStudio>
+    </SupportedProducts>
+    <SupportedFrameworkRuntimeEdition MinVersion="4.0" MaxVersion="4.0" />
+  </Identifier>
+  <References>
+    <Reference Id="GoFDesignPatterns.Microsoft.e13c575e-9cd4-4d93-9e79-a2ff5654a9e0">
+      <Name>Design Patterns UML Profile</Name>
+      <VsixPath>GoFDesignPatterns.vsix</VsixPath>
+    </Reference>
+  </References>
+  <Content>
+    <CustomExtension Type="Microsoft.VisualStudio.ArchitectureTools.CustomToolboxItems">GoFDesignPatternsToolboxItems.tbxinfo</CustomExtension>
+  </Content>
+</Vsix>

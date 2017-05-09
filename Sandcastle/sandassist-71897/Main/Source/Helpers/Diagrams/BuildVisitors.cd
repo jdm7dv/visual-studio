@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Sandcastle.BuildVisitor&lt;T&gt;" Collapsed="true">
+    <Position X="3.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAIAAAAAAACAAAAAAAAAAAAgABAABA=</HashCode>
+      <FileName>BuildVisitor.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="1.054" />
+  </Class>
+  <Class Name="Sandcastle.Conceptual.ConceptualTocVisitor" Collapsed="true">
+    <Position X="3" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Conceptual\ConceptualTocVisitor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sandcastle.References.ReferenceTocVisitor" Collapsed="true">
+    <Position X="3" Y="5.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>References\ReferenceTocVisitor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sandcastle.References.ReferenceVisitor" Collapsed="true">
+    <Position X="3" Y="4.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAIEAQAiAABQQAAAAAAASIAAAAAAAhAAAABAAAAAg=</HashCode>
+      <FileName>References\ReferenceVisitor.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="1.304" />
+  </Class>
+  <Class Name="Sandcastle.References.ReferenceTocExcludeVisitor" Collapsed="true">
+    <Position X="1.25" Y="7" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQQAAAAAAAAAAAAAAAIgAAAgEAAAABg=</HashCode>
+      <FileName>References\ReferenceTocExcludeVisitor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sandcastle.References.ReferenceTocLayoutVisitor" Collapsed="true">
+    <Position X="4.5" Y="7" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAMAFABAAAAAAQyAAFEAAAZBACAAAAAgAAAAEAAYABg=</HashCode>
+      <FileName>References\ReferenceTocLayoutVisitor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sandcastle.References.ReferenceSpellCheckVisitor" Collapsed="true">
+    <Position X="0.5" Y="5.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAEAAAAQQAAAACAAAAAAgCAUAkgAABEAAAgBg=</HashCode>
+      <FileName>References\ReferenceSpellCheckVisitor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sandcastle.References.ReferenceVisibilityVisitor" Collapsed="true">
+    <Position X="0.5" Y="4.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>CBAZAAAAAAAAIQaCAAAAAAAAAAAAAAAgAAAAEAIAABg=</HashCode>
+      <FileName>References\ReferenceVisibilityVisitor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sandcastle.References.ReferenceXPathVisitor" Collapsed="true">
+    <Position X="5.25" Y="5.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgQQAAAAAAAAAgAAAAAAgIAAAEAAAABg=</HashCode>
+      <FileName>References\ReferenceXPathVisitor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sandcastle.References.ReferenceCommentVisitor" Collapsed="true">
+    <Position X="5.5" Y="4.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>EAAAABAAEAAAAQQAAAACAAAIIAACAAAgAAAAEgAAABg=</HashCode>
+      <FileName>References\ReferenceCommentVisitor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sandcastle.Conceptual.ConceptualVisitor" Collapsed="true">
+    <Position X="3" Y="1.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAIEAQAiAABQAAAAAAAASIAAAAAAAhAAAABAAAAAg=</HashCode>
+      <FileName>Conceptual\ConceptualVisitor.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="1.304" />
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="d1e42477-bef7-494e-b1a8-be520389b4e7" name="Prototype" linkedPackageId="893ac37a-8fce-4d0b-b9c6-b13446ef1e83" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="51659dc9-d519-4b14-83b7-567095fa32d9" name="Client" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="025d6569-9e43-4f7a-81d7-065d62ee2f3b" />
+        <suppliersInternal>
+          <dependency Id="fbdb2965-9e9a-48dc-aec1-c8b25c105167" name="import">
+            <interfaceMoniker Id="89eb34bd-c02b-481a-b460-c47bac4653a7" LastKnownName="Prototype" />
+            <elementDefinition Id="caf70722-5c57-4af8-a4ac-d9ab9673ded1" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="07d9d84d-d77b-4fa5-9aab-1f103451fce3" name="ConcretePrototype" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="ae85c43f-4ccc-45b4-9546-c8dadd35e116" name="ConcretePrototype" profile="GoFDesignPatterns">
+            <elementDefinition Id="664f3378-b69a-4077-a102-a8d39b060fda" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="89be5e92-053a-49e3-af45-dca23e236919" />
+        <suppliersInternal>
+          <interfaceRealization Id="5e971e95-3a46-468e-84aa-7bcce4335650">
+            <interfaceMoniker Id="89eb34bd-c02b-481a-b460-c47bac4653a7" LastKnownName="Prototype" />
+            <elementDefinition Id="29f3e247-5e3c-478d-a059-d6b111f7afac" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="3b307b03-a77f-43fa-bfab-bb0e806cda91" name="Clone" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="9f7e5248-2cef-4d93-991d-4801be32101b" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="60b5a76b-6724-4843-9feb-f18e78c4b12c" name="ConcretePrototype" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="3c8ff72b-fa3b-4b66-a638-707001b674d7" name="ConcretePrototype" profile="GoFDesignPatterns">
+            <elementDefinition Id="cf0d8f42-5881-436f-b65e-f842e86e5b63" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="d849ed99-77b6-43de-9f71-0712ddec00fb" />
+        <suppliersInternal>
+          <interfaceRealization Id="29665752-f8fe-425b-882b-c9b5d05646d5">
+            <interfaceMoniker Id="89eb34bd-c02b-481a-b460-c47bac4653a7" LastKnownName="Prototype" />
+            <elementDefinition Id="6e6c73e7-e6e5-4ecc-bd6d-846a6a4cd905" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="52e9fa73-12fb-4337-9667-d406410246a7" name="Clone" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="895dda2d-d05f-4683-8a48-7fb4751f61a1" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="89eb34bd-c02b-481a-b460-c47bac4653a7" name="Prototype" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c47672b6-831b-4669-9671-0eb5fd6ef6ea" />
+        <ownedOperations>
+          <operation Id="b237797c-6780-4d82-b918-0c3be68dad37" name="Clone" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d9ecb33f-6e3a-4e02-9ce7-ef0a103d332c" />
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="893ac37a-8fce-4d0b-b9c6-b13446ef1e83" name="DesignPatternDiagrams">
+    <elementDefinition Id="907f02d9-97a4-416e-85de-c96834fd3288" />
+    <profileInstances>
+      <packageHasProfileInstances Id="aef09632-30c9-47a2-b1a7-ed27560471e8">
+        <profileInstance Id="827db987-8c95-4290-92ba-13bf1ff68514" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="16cb0c25-e4df-4870-84db-f20eda236c18">
+        <profileInstance Id="62aee763-e2e9-41da-a6bb-13d52c7129f9" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="265ac043-73e2-4f0f-8a6c-9b93a77083a9">
+        <profileInstance Id="469e446a-6be3-43c4-a12e-110316cfe049" name="GoFDesignPatterns">
+          <elementDefinition Id="b2ec555c-7ad5-4568-ac10-ebbefafe538a" />
+        </profileInstance>
+        <elementDefinition Id="74b34c67-f946-48ae-a1f7-ce09ad6bf6e5" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

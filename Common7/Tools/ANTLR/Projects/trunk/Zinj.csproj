@@ -1,0 +1,581 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.30319</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{235D65CC-CA3B-4ED2-8C0A-5CB31BE731CF}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon />
+    <AssemblyKeyContainerName />
+    <AssemblyName>JScript</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Zinj</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>0.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime">
+      <Name>Antlr3.Runtime</Name>
+      <HintPath>.\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib">
+      <Name>mscorlib</Name>
+      <HintPath>mscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+      <HintPath>System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <Name>System.Core</Name>
+      <HintPath>System.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="JSDebugFunction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JSDebugFunctionDef.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\ParserEx.cs" />
+    <Compile Include="Compile\JavaScript.tokens.cs" />
+    <Compile Include="Compile\TreeNodes\AddNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AccessorProperty.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataProperty.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\FunctionDelegate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\GlobalCodeDelegate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Objects\BuiltIn\JSMath.cs" />
+    <Compile Include="Objects\BuiltIn\JSArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Objects\BuiltIn\JSArray.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Objects\JSBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Objects\Primatives\JSBool.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Objects\Primatives\Boxed\JSBoxedBoolean.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Objects\Primatives\Boxed\JSBoxedNumber.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Objects\Primatives\Boxed\JSBoxedString.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JSContext.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Objects\BuiltIn\JSDate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JSDeclScope.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JSDelegateProperty.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JSDelegateWrapper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JSEnvRec.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JSExternWrapper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Objects\BuiltIn\JSFunctionBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JSFunctionContext.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Objects\BuiltIn\JSFunctionObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JSGlobalContext.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JSGlobalScope.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Objects\Primatives\JSNull.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Objects\Primatives\JSNumber.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Objects\BuiltIn\JSObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JSObjectScope.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Objects\Primatives\JSPrimitive.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Objects\BuiltIn\JSRegExp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JSRuntimeException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Objects\Primatives\JSString.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JSType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Objects\Primatives\JSUndefined.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Objects\JSValue.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JSWithScope.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PropWrapper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\ASMCompileContext.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\CompileContext.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\CompiledScript.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DebugWrapper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\DMCompileContext.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\ScriptSource.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utilities.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\ArrayLiteral.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\AssignmentNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\baseCase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\baseNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\BaseRefNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\BinaryCompareNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\BinaryMathNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\BinaryNotNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\BinaryOpNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\BitwiseANDExpression.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\BitwiseOpNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\BitwiseORExpression.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\BitwiseXORExpression.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\BreakNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\CaseClause.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\CommaExpression.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\CompoundAddNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\CompoundAndNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\CompoundAssignmentNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\CompoundBitwiseNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\CompoundDivNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\CompoundLShiftNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\CompoundModNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\CompoundMultNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\CompoundNumNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\CompoundOrNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\CompoundRShiftNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\CompoundRUShiftNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\CompoundSubNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\CompoundXOrNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\ConditionalExpression.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\ContinueNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\DefaultClause.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\DeleteNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\DivideNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\DoWhileStatement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\EmptyStatement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\EqualsNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\EqualsNodeEx.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\ExpressionNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\ExpressionStatement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\ForInStatement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\ForStatement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\FunctionCallNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\functionDeclarationNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\functionExpressionNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\GreaterThanEqNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\GreaterThanNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\IdentifierNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\IfStatement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\IndexNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\InNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\InstanceOfNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\JavaScriptLexer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\JavaScriptParser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JSExposeAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\LeftShiftNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\LessThanEqNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\LessThanNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\LiteralFalse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\LiteralNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\LiteralNull.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\LiteralRegex.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\LiteralTrue.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\LogicalAndNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\LogicalNotNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\LogicalOrNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\ModuloNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\MultiplyNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\NegNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\NewExpression.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\nilNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\NotEqualsNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\NotEqualsNodeEx.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\ObjectLiteral.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\ParameterList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\PosNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\postDecExpr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\postExprNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\postIncExpr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\preDecExpr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\preExprNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\preIncExpr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\PropertyRefNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\returnStatement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\RightShiftNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\RightShiftUNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\ShiftNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\StatementList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\StatementNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\SubNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\SwitchStatement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\TermBuilderNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\ThisRef.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\ThrowStatement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\TopStatementList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\tryStatementNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\TypeOfExpr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\VarDeclStatement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\VoidNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\WhileStatement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compile\TreeNodes\WithStatement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Interop\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+</Project>

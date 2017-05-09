@@ -1,0 +1,5 @@
+C:\Users\Jonathan_Moore\Desktop\sandassist-71897\Main\Samples\Helpers\SampleTopics\bin\HelpTestTopics.dll
+C:\Users\Jonathan_Moore\Desktop\sandassist-71897\Main\Samples\Helpers\SampleTopics\bin\HelpTestTopics.pdb
+C:\Users\Jonathan_Moore\Desktop\sandassist-71897\Main\Samples\Helpers\SampleTopics\obj\Debug\HelpTestTopics.dll
+C:\Users\Jonathan_Moore\Desktop\sandassist-71897\Main\Samples\Helpers\SampleTopics\obj\Debug\HelpTestTopics.pdb
+C:\Users\Jonathan_Moore\Desktop\sandassist-71897\Main\Samples\Helpers\SampleTopics\obj\Debug\SampleTopics.csprojResolveAssemblyReference.cache

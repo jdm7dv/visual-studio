@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="8960a8ce-2715-4990-a38f-7ab1553bef42" name="Bridge" linkedPackageId="46453eac-921d-4646-8d4d-d2af3dca553c" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="085a8c82-4f65-4422-99e4-39f9e5460683" name="Abstraction" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="184ef7dc-79a7-4a8e-9535-b374bea50172" name="Abstraction" profile="GoFDesignPatterns">
+            <elementDefinition Id="3ca748f9-5d32-44af-94a7-d69e32ae73f0" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="921ad453-39c1-4d55-a68c-a5dcefa196cd" />
+        <targetEnds>
+          <association Id="b3b382ce-69ec-4bd7-93e6-ef75e1d7f26e" isDerived="false" sourceEndRoleName="Abstraction" targetEndRoleName="IAbstraction" isLeaf="false" isAbstract="false">
+            <interfaceMoniker Id="5d55db76-1596-4f35-a10e-c3f366717459" LastKnownName="IAbstraction" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a4ea23fc-13fe-41b4-8ca1-d50f0a8b47cd" name="Abstraction" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="93f0c56d-5a2b-4f98-90ec-94d77f2ce61f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c616af32-dd86-4979-942c-99b32a609f29" name="IAbstraction" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="dde0118d-a6b6-4d75-b733-b18c7fb56d8b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="000b9ad7-4f1e-4d7d-b5f0-a91b7ffc4cc9" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="af10c166-6d7c-4b1b-be1f-d7a091c91ef1" name="Refined Abstraction" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="c34cfed1-31a8-41d6-9435-a521c88610bb" name="RefinedAbstraction" profile="GoFDesignPatterns">
+            <elementDefinition Id="7f7eb7e7-4b9a-4011-a5ce-4440f507f7fd" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="7afe03dd-17d9-4307-9d12-fb5446083e78" />
+        <generalsInternal>
+          <generalization Id="b339f512-4051-4d24-9c9e-93effbffd1f2" isSubstitutable="false">
+            <classMoniker Id="085a8c82-4f65-4422-99e4-39f9e5460683" LastKnownName="Abstraction" />
+            <elementDefinition Id="e32a9efd-4505-49a4-8968-e9701b3c1d87" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="4b644041-e5f5-435b-a543-4d1336dd595d" isDerived="false" sourceEndRoleName="Refined Abstraction" targetEndRoleName="IRefinedAbstraction" isLeaf="false" isAbstract="false">
+            <interfaceMoniker Id="7ab41bc6-4ca9-407f-9262-f91151363b8c" LastKnownName="IRefinedAbstraction" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cc2050f5-4ac5-4e59-a746-a50805cc6f53" name="Refined Abstraction" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4c69f20b-7570-405a-8081-d56458fd54e1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="95984544-58d1-45f5-8a74-9c27dfa876a7" name="IRefinedAbstraction" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f347f06e-a9ab-4e0a-9299-f28772af18ef" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="da48f1a3-57c4-46ab-b659-e3114ec87703" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="7ab41bc6-4ca9-407f-9262-f91151363b8c" name="IRefinedAbstraction" isAbstract="false" isLeaf="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="4ecbd233-7b9b-4639-925d-0767a80a5edb" name="IRefinedAbstraction" profile="GoFDesignPatterns">
+            <elementDefinition Id="1372bbdb-3f37-4d6a-8b07-061ee70aae73" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="2c288871-e781-4023-bbd7-9ec7b8a220f4" />
+        <generalsInternal>
+          <generalization Id="ff5fd714-dd14-4753-a9eb-f06b48703684" isSubstitutable="false">
+            <interfaceMoniker Id="5d55db76-1596-4f35-a10e-c3f366717459" LastKnownName="IAbstraction" />
+            <elementDefinition Id="94ffd2db-a3b5-4ff7-93e1-4b2ceb7781e3" />
+          </generalization>
+        </generalsInternal>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="5d55db76-1596-4f35-a10e-c3f366717459" name="IAbstraction" isAbstract="false" isLeaf="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="ae864c59-1266-4e23-adca-c3f437348570" name="IAbstraction" profile="GoFDesignPatterns">
+            <elementDefinition Id="68b88b48-4bd2-4d66-b46c-0f2fd63c1fe3" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="9e5e8307-dba7-4a3f-a1d1-f4eedfdf6fae" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="46453eac-921d-4646-8d4d-d2af3dca553c" name="DesignPatternDiagrams">
+    <elementDefinition Id="907f02d9-97a4-416e-85de-c96834fd3288" />
+    <profileInstances>
+      <packageHasProfileInstances Id="4f53f91d-dbdf-4c67-afae-731b97adc4da">
+        <profileInstance Id="f3f93076-8982-4896-9a2d-2a3500450ebc" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="60014608-7ea7-4baa-8f7f-7cd774db1db3">
+        <profileInstance Id="f0917004-9c81-4d2e-9a45-f027df8b02d1" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="9503ebb3-fd3a-4c57-b76c-ca2c751b8f07">
+        <profileInstance Id="9e94b112-2a79-4f1c-a132-cd88e2aeac47" name="GoFDesignPatterns">
+          <elementDefinition Id="b2ec555c-7ad5-4568-ac10-ebbefafe538a" />
+        </profileInstance>
+        <elementDefinition Id="74b34c67-f946-48ae-a1f7-ce09ad6bf6e5" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

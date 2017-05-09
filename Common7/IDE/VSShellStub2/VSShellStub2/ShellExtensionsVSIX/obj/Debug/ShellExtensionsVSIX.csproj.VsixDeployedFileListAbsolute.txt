@@ -1,0 +1,5 @@
+C:\Users\Jonathan_Moore\Documents\Visual Studio 2010\VSShellStub2\Debug\Extensions\Application\\VSShellStub2.AboutBoxPackage.dll
+C:\Users\Jonathan_Moore\Documents\Visual Studio 2010\VSShellStub2\Debug\Extensions\Application\\extension.vsixmanifest
+C:\Users\Jonathan_Moore\Documents\Visual Studio 2010\VSShellStub2\Debug\Extensions\Application\\VSShellStub2.AboutBoxPackage.pkgdef
+C:\Users\Jonathan_Moore\Documents\Visual Studio 2010\VSShellStub2\Debug\Extensions\Application\\VSShellStub2.AboutBoxPackage.pdb
+C:\Users\Jonathan_Moore\Documents\Visual Studio 2010\VSShellStub2\Debug\Extensions\Application\ProjectTemplates\\WindowsFormsApplication1.zip

@@ -1,0 +1,4 @@
+C:\Users\Jonathan_Moore\Desktop\sandassist-71897\Main\Output\Sandcastle.Construction.dll
+C:\Users\Jonathan_Moore\Desktop\sandassist-71897\Main\Output\Sandcastle.Construction.pdb
+C:\Users\Jonathan_Moore\Desktop\sandassist-71897\Main\Source\Construction\obj\Debug\Sandcastle.Construction.dll
+C:\Users\Jonathan_Moore\Desktop\sandassist-71897\Main\Source\Construction\obj\Debug\Sandcastle.Construction.pdb

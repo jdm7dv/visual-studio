@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<documentGroup type="Reference" version="1.0">
+    <location />
+    <propertyGroup name="General">
+        <property name="Id">5ff077ae-a640-44a3-80af-81874fa14f9d</property>
+        <property name="Name">Testing Redirection</property>
+        <property name="Exclude">False</property>
+        <property name="ExcludeToc">False</property>
+        <property name="SyntaxUsage">False</property>
+        <property name="Description"></property>
+        <property name="RunningHeaderText">Sandcastle Helpers: Testing Assembly Redirection</property>
+        <property name="SyntaxType">Standard, Xaml</property>
+    </propertyGroup>
+    <propertyGroup name="Reference">
+        <property name="XmlnsForXaml">True</property>
+        <property name="RootTitle">Testing Assembly Redirection</property>
+        <property name="RootTopicId"></property>
+        <property name="VersionType">Assembly</property>
+    </propertyGroup>
+    <propertyBag />
+    <contents>
+        <content type="Reference" source=".\Redirection.sandrefs" />
+    </contents>
+</documentGroup>

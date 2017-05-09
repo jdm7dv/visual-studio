@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="829a1a73-ce45-4e14-8c62-cd8f950fef1c" name="Singleton" linkedPackageId="3c38d99e-e76a-4f7d-8d48-61e11e6f9718" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="eea8afdf-02ce-4716-b4ea-72811f86a99f">
+      <profileInstance Id="b7e7c5d4-09cb-4eaa-9ba2-1727b7b9b4fc" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="97954396-215f-4188-9dbf-5943cf4f2ba6">
+      <profileInstance Id="9ffc4327-a5c8-40fd-a097-ddf82cf2e0df" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="3ef04620-dfa2-4cd7-a58c-a9074c06a272">
+      <profileInstance Id="1a143958-893d-48ff-bc68-32222709a27f" name="GoFDesignPatterns">
+        <elementDefinition Id="b2ec555c-7ad5-4568-ac10-ebbefafe538a" />
+      </profileInstance>
+      <elementDefinition Id="74b34c67-f946-48ae-a1f7-ce09ad6bf6e5" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="2d304950-7b98-4a3e-af94-745083b6560f" name="Singleton" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="49796dcb-3726-4d60-ad0b-5bea0ddc0671" name="Singleton" profile="GoFDesignPatterns">
+            <elementDefinition Id="02eb65a5-dc24-4c5d-b54d-d1f7f280ef6f" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="6fd81e9f-4c1e-479f-aea2-eb2ff3cff91b" />
+        <ownedAttributesInternal>
+          <property Id="6e9a9e9c-40a1-454d-ac8e-78496fe5db07" name="instance" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="86ceab02-8d6c-4273-b129-4a0842374217" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="f8941eb3-29de-4dac-94df-3d5bf0c7a41d" name="getInstance" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="8150f2fe-87e1-4886-870c-3094d9162a6a" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="3c38d99e-e76a-4f7d-8d48-61e11e6f9718" name="DesignPatternDiagrams">
+    <elementDefinition Id="907f02d9-97a4-416e-85de-c96834fd3288" />
+  </package>
+</logicalClassDesignerModel>

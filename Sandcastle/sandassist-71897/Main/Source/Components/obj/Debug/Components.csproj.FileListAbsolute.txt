@@ -1,0 +1,3 @@
+C:\Users\Jonathan_Moore\Desktop\sandassist-71897\Main\Source\Components\obj\Debug\Components.csprojResolveAssemblyReference.cache
+C:\Users\Jonathan_Moore\Desktop\sandassist-71897\Main\Source\Components\obj\Debug\Sandcastle.Components.Properties.Resources.resources
+C:\Users\Jonathan_Moore\Desktop\sandassist-71897\Main\Source\Components\obj\Debug\Components.csproj.GenerateResource.Cache

@@ -1,0 +1,14 @@
+<!--
+##############################################################################
+#
+#   Singularity+
+#
+#   Copyright (c) Jonathan Moore.  All rights reserved.
+#
+#   Note:
+#
+##############################################################################
+-->
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\Targets\Singularity+.targets"/>
+</Project>

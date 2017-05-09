@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="ba6f7810-a5c1-43cf-90c8-3998cf18690c" name="Iterator" linkedPackageId="02e9b120-034b-498c-8f22-6b7198782469" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="f1803b1b-536c-4743-8d05-bf33a283eb01">
+      <profileInstance Id="ccfb6504-41fb-4b95-8faa-6d357bf7c438" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="fe7d73c0-a2f6-4487-a2a7-ba3a29b8dcbc">
+      <profileInstance Id="cc30b40a-0f8b-43e5-bc24-9425fafcbbb8" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="4cae9dfe-d961-4e60-8011-66e696bec683">
+      <profileInstance Id="28ced6af-ad24-464a-ad1e-c7bad40c13e6" name="GoFDesignPatterns">
+        <elementDefinition Id="b2ec555c-7ad5-4568-ac10-ebbefafe538a" />
+      </profileInstance>
+      <elementDefinition Id="74b34c67-f946-48ae-a1f7-ce09ad6bf6e5" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="64c60427-c1b4-4fd2-a67e-76682cce596e" name="ICollection" isAbstract="false" isLeaf="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="54510370-62e5-4394-a345-0cc37e24ae8e" name="ICollection" profile="GoFDesignPatterns">
+            <elementDefinition Id="2b9f022b-8728-422c-bede-8ca036de00af" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="576bea22-7044-43ee-94c8-f51d47288b1a" />
+        <targetEnds>
+          <association Id="c40efc5f-9e1a-4c8d-9584-a2c8f6ff9892" isDerived="false" sourceEndRoleName="ICollection" targetEndRoleName="IIterator" isLeaf="false" name="creates" isAbstract="false">
+            <interfaceMoniker Id="82d61c67-8757-4944-9a0f-57f06eccfdf0" LastKnownName="IIterator" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="97e28af1-8565-4aaf-a9a2-8e7b0218f644" name="ICollection" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ac35c63b-8d85-40b0-bc82-55be688269dc" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2697ab9f-cf3d-4272-a481-085e435505f2" name="IIterator" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="37ae183a-2f5d-4cf8-b0b2-64f13874873f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2749f797-7330-46f5-9678-662ad2819fd9" />
+          </association>
+        </targetEnds>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="82d61c67-8757-4944-9a0f-57f06eccfdf0" name="IIterator" isAbstract="false" isLeaf="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="cd90b7b3-8b96-4778-af48-be3589b525dd" name="IIterator" profile="GoFDesignPatterns">
+            <elementDefinition Id="a0520315-db98-45c1-bf5a-8fe90e2b51da" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="d819d160-fb03-45bb-b6c5-958dd2affa03" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="1f117475-9c80-4ee1-bea2-d56815667063" name="Collection" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="45adc743-dd25-4545-8adc-8c2bde87c306" name="Collection" profile="GoFDesignPatterns">
+            <elementDefinition Id="1b18e180-af5a-4dd4-b2ad-cbf0e8f95153" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="15acc105-eeaf-446f-a6d0-187ac8ef18d0" />
+        <suppliersInternal>
+          <interfaceRealization Id="fb15907b-f2da-4221-8527-45316cb122ec">
+            <interfaceMoniker Id="64c60427-c1b4-4fd2-a67e-76682cce596e" LastKnownName="ICollection" />
+            <elementDefinition Id="47018f55-0bfc-4285-9110-371aa1daab5e" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="54179cfc-de56-4327-8ec5-497828b4223b" name="Iterator" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="b82cd18f-f5e7-47dd-b16c-038793bed714" name="Iterator" profile="GoFDesignPatterns">
+            <elementDefinition Id="caab9384-7cf3-4caf-a857-bd66a5763efd" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="23a6504a-ba46-404c-b82e-990b6b9e3c2a" />
+        <suppliersInternal>
+          <interfaceRealization Id="f8414858-9460-4de1-a46f-4c1db7ab45ea">
+            <interfaceMoniker Id="82d61c67-8757-4944-9a0f-57f06eccfdf0" LastKnownName="IIterator" />
+            <elementDefinition Id="fbf3acb4-5eff-42fd-bbc3-15dc0834db28" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association Id="26226583-3e8c-45db-b280-1cea145a33b7" isDerived="false" sourceEndRoleName="Iterator" targetEndRoleName="Collection" isLeaf="false" name="fetches objects from" isAbstract="false">
+            <classMoniker Id="1f117475-9c80-4ee1-bea2-d56815667063" LastKnownName="Collection" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e566d65f-dceb-438a-a0ed-8992563fb776" name="Iterator" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="7faed857-01bc-466a-8962-2cea3d94afa8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="41a99359-bff9-47d9-a890-731e083ff1b9" name="Collection" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="af6bc3aa-f362-4b6b-981c-7280b35615ca" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="687540ae-d78a-4032-8eaa-2ac23c104259" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="02e9b120-034b-498c-8f22-6b7198782469" name="DesignPatternDiagrams">
+    <elementDefinition Id="907f02d9-97a4-416e-85de-c96834fd3288" />
+  </package>
+</logicalClassDesignerModel>

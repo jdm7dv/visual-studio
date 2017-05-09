@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="3f40f46f-b519-4092-a9b9-5a9837a6e2cd" name="Template" linkedPackageId="84fd7c1d-78fe-4773-8048-83bef5dca1dd" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="58c8e8cf-fde7-4f9c-a1b3-77397c828241" name="AbstractTemplate" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="2e09ae60-e95f-466d-be0b-ba56822d799c" name="AbstractTemplate" profile="GoFDesignPatterns">
+            <elementDefinition Id="92f0b4f8-becf-4a2e-a452-bd514c3a5224" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="44115f2a-b903-45aa-beb0-0248d5a112bc" />
+        <ownedOperationsInternal>
+          <operation Id="f2187b36-2ce1-4a4b-99c6-7aba496f2e44" name="templateOperation" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="38cd7522-774a-4014-8b12-b0ab43a016be" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="973d9224-37eb-4bd6-910e-1eae891e6ecb" name="ConcreteTemplate" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="83e83797-129b-4e89-937f-1bdcfe5ff164" name="ConcreteTemplate" profile="GoFDesignPatterns">
+            <elementDefinition Id="86a0bda7-4c53-47fb-84a7-953cbbbf666e" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="95c9f8c6-18af-49cb-a5a2-28108c952948" />
+        <generalsInternal>
+          <generalization Id="19199181-32ab-493f-94df-e4b7464b07e8" isSubstitutable="false">
+            <classMoniker Id="58c8e8cf-fde7-4f9c-a1b3-77397c828241" LastKnownName="AbstractTemplate" />
+            <elementDefinition Id="f3f1f035-dbbb-41fd-9c3e-4e96cf7df906" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="84fd7c1d-78fe-4773-8048-83bef5dca1dd" name="DesignPatternDiagrams">
+    <elementDefinition Id="907f02d9-97a4-416e-85de-c96834fd3288" />
+    <profileInstances>
+      <packageHasProfileInstances Id="15310d48-3786-4ea9-893e-35e465a0d5cf">
+        <profileInstance Id="c28c466d-cd58-4463-93bd-44209de3586b" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="49a2cf32-ebc7-4aea-b2be-aeee05a5990f">
+        <profileInstance Id="c0e55708-eac8-4986-99ad-2d633b7895ff" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="8dedfc2b-fb38-457e-88a6-f757412a7910">
+        <profileInstance Id="b51cc2cf-faeb-407a-b1c6-f34b2431e611" name="GoFDesignPatterns">
+          <elementDefinition Id="b2ec555c-7ad5-4568-ac10-ebbefafe538a" />
+        </profileInstance>
+        <elementDefinition Id="74b34c67-f946-48ae-a1f7-ce09ad6bf6e5" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

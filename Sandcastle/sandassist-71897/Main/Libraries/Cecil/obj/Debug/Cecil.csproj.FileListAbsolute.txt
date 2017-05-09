@@ -1,0 +1,5 @@
+C:\Users\Jonathan_Moore\Desktop\sandassist-71897\Main\Output\Sandcastle.Cecil.xml
+C:\Users\Jonathan_Moore\Desktop\sandassist-71897\Main\Output\Sandcastle.Cecil.dll
+C:\Users\Jonathan_Moore\Desktop\sandassist-71897\Main\Output\Sandcastle.Cecil.pdb
+C:\Users\Jonathan_Moore\Desktop\sandassist-71897\Main\Libraries\Cecil\obj\Debug\Sandcastle.Cecil.dll
+C:\Users\Jonathan_Moore\Desktop\sandassist-71897\Main\Libraries\Cecil\obj\Debug\Sandcastle.Cecil.pdb

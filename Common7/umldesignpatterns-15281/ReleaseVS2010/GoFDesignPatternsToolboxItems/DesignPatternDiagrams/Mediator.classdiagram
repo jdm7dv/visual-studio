@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="4ea57f11-888b-46fa-b655-c261fcb10bf9" name="Mediator" linkedPackageId="90c775ce-d35b-4cc3-8168-f8605f566bb5" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f8df0c61-4661-48ae-be37-f88742e435e5" name="Colleague 1" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="b7d5c631-3632-4acd-b4af-15ab10e6f838" name="Colleague" profile="GoFDesignPatterns">
+            <elementDefinition Id="e75fc659-3009-4219-b669-5d4350b97d1a" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="091bee6a-bcb6-480e-bfe4-072a10b285e5" />
+        <targetEnds>
+          <association Id="5cbb891b-909d-4c9c-a417-17dc8d186edd" isDerived="false" sourceEndRoleName="Colleague 1" targetEndRoleName="EventListener 1" isLeaf="false" name="Notifies state change" isAbstract="false">
+            <interfaceMoniker Id="fe51c7d2-388a-4e87-9b0f-0659268bc974" LastKnownName="EventListener 1" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="33870846-e33f-49e1-8160-aac3cdae3db8" name="Colleague 1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="de3c4313-2acf-44f8-a83a-4c7c7fea8348" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="260a4fed-00f7-4389-a406-531673519969" name="EventListener 1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f0a1cf2b-2e5d-4bf3-9130-6fe8c589f57c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4d6891de-21df-4322-a342-a0cfaeffc324" />
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation Id="20901b08-e2df-4670-83b3-4f7121ca6ff2" name="AddEventListener" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="9987f7f3-309a-4b90-bd5d-39f7d37489ef" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="1c25907d-f76b-43c9-952b-1c809e208ea5" name="Colleague 2" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="756fb20f-cbde-4877-a010-a9e6d90444b3" name="Colleague" profile="GoFDesignPatterns">
+            <elementDefinition Id="6677a7f5-004c-4641-9f67-24993b80d2d6" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="7156d141-68bc-459f-b59b-26aec65f333e" />
+        <targetEnds>
+          <association Id="f436b00e-f4d5-46e5-8731-e5edb98c40a6" isDerived="false" sourceEndRoleName="Colleague 2" targetEndRoleName="EventListener 2" isLeaf="false" name="Notifies state change" isAbstract="false">
+            <interfaceMoniker Id="59ff5d66-eda6-4919-ab7a-2ba679265394" LastKnownName="EventListener 2" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="80de750e-6fb4-4102-bb60-b987432a5d5d" name="Colleague 2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2874a074-ebbf-45ce-9415-661531576c44" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d6ccc449-b719-4348-88ca-8c6df56edabc" name="EventListener 2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="863f05f7-9e9b-4fa3-8816-1bd3149cf135" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4ac7212f-de42-4815-9cce-880a93c6552d" />
+          </association>
+          <association Id="c083f8d7-639e-4763-94c6-1e1ac290e7b4" isDerived="false" sourceEndRoleName="Colleague 2" targetEndRoleName="EventListener 3" isLeaf="false" name="Notifies state change" isAbstract="false">
+            <interfaceMoniker Id="2cd4b06f-37b7-426c-b27d-67f5a2c00e26" LastKnownName="EventListener 3" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="83bc70da-8d11-4113-ae40-c390a7d1c217" name="Colleague 2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d40df615-4308-443d-ae0d-be7a6b37d45b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4385ac54-b3de-4b0d-9fcc-761e36195c92" name="EventListener 3" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b56336e6-fd00-40d8-8594-954a53b819a8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="0c64d16e-bb69-4ed4-af50-85cb3143ea58" />
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation Id="0c675063-1bc0-4845-9c88-2078fcdc73c8" name="AddEventListener" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="9969a13e-1dea-45d5-a1ef-295025808ce5" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="fe51c7d2-388a-4e87-9b0f-0659268bc974" name="EventListener 1" isAbstract="false" isLeaf="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="a80c43a2-c386-43e9-b693-6f0451dcbb33" name="EventListener" profile="GoFDesignPatterns">
+            <elementDefinition Id="f85415c5-460f-44fc-a991-5f8ad0e894f3" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="4561cce0-11fe-432d-9fef-e587d5bd3152" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="59ff5d66-eda6-4919-ab7a-2ba679265394" name="EventListener 2" isAbstract="false" isLeaf="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="3ef48ff5-becb-419f-8b60-1d1aaf0dcd56" name="EventListener" profile="GoFDesignPatterns">
+            <elementDefinition Id="1e5aa9d1-7872-47a4-87b2-4192b33b15f8" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="accf8fb6-902e-4ed6-827b-b0915988f4f0" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="2cd4b06f-37b7-426c-b27d-67f5a2c00e26" name="EventListener 3" isAbstract="false" isLeaf="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="15e9fb25-c69d-4d6a-a611-750450210e12" name="EventListener" profile="GoFDesignPatterns">
+            <elementDefinition Id="e78965e7-6825-4604-97c7-dc76a20f5010" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="faf1501d-11e0-49a9-a2b8-2fbb737a4f5b" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="66773a0b-461d-4952-8f6f-5a5b857a28d4" name="Mediator" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="3229d0d4-b390-4158-a4c0-61dab0b78ce5" name="Mediator" profile="GoFDesignPatterns">
+            <elementDefinition Id="53a202e6-2922-420d-b79d-8e2a799ff076" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="91a1d980-290c-49d2-97e7-e5b4e778a213" />
+        <suppliersInternal>
+          <interfaceRealization Id="dea4e9df-e077-471a-9ee0-2ad38e0ddb0c">
+            <interfaceMoniker Id="fe51c7d2-388a-4e87-9b0f-0659268bc974" LastKnownName="EventListener 1" />
+            <elementDefinition Id="a48a49df-ff40-4f26-950e-0672861360e0" />
+          </interfaceRealization>
+          <interfaceRealization Id="60a85b4a-20d4-4060-a94d-dc5396d3a2e5">
+            <interfaceMoniker Id="59ff5d66-eda6-4919-ab7a-2ba679265394" LastKnownName="EventListener 2" />
+            <elementDefinition Id="c992f97c-b9e1-4124-ab69-b9ec11f62264" />
+          </interfaceRealization>
+          <interfaceRealization Id="18320225-cbe7-43f3-a86a-ed00a68b5926">
+            <interfaceMoniker Id="2cd4b06f-37b7-426c-b27d-67f5a2c00e26" LastKnownName="EventListener 3" />
+            <elementDefinition Id="e048bab6-fd6d-42ee-8511-325b618ca3cf" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association Id="5dc06315-e02e-4ad5-917f-c8d174583fee" isDerived="false" sourceEndRoleName="Mediator" targetEndRoleName="Colleague 1" isLeaf="false" name="Propogates changes" isAbstract="false">
+            <classMoniker Id="f8df0c61-4661-48ae-be37-f88742e435e5" LastKnownName="Colleague 1" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="05ec63af-2559-430a-aad8-764009a6862c" name="Mediator" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e109fbdc-9592-462d-9ff1-556ca9f746b6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="730f37c7-5a4c-41e8-bad5-a582f19a34b3" name="Colleague 1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4d0c5eb7-6243-4c86-95f0-34cf5e50b168" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4b15b01e-551e-4801-8312-5cb6d5d19587" />
+          </association>
+          <association Id="25ca56c2-4a93-40b7-85e8-7056d5aaf45b" isDerived="false" sourceEndRoleName="Mediator" targetEndRoleName="Colleague 2" isLeaf="false" name="Propogates changes" isAbstract="false">
+            <classMoniker Id="1c25907d-f76b-43c9-952b-1c809e208ea5" LastKnownName="Colleague 2" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3337fe72-99a3-4f94-963b-fa250bd36dc2" name="Mediator" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c9dec08f-4b2d-4ea3-bd4f-9ccdcc5b6501" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f73f6d10-1691-48ba-8fb9-70b4d5209ec2" name="Colleague 2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f7f2c67c-037d-4aa7-9685-957eb5bbb0ae" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="41d25cd8-6afe-440e-bdbe-6be1ff55da23" />
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation Id="d19d7cea-f531-4cf8-89de-c6349b877a16" name="RegisterColleague" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="cdaa2613-52ef-4fd7-971c-4327d65d2219" />
+          </operation>
+          <operation Id="9653828e-83f2-47a5-afb0-17dbe5ab3269" name="handleEvent" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b6031c28-c73b-4076-a02c-4fdd83187f29" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="90c775ce-d35b-4cc3-8168-f8605f566bb5" name="DesignPatternDiagrams">
+    <elementDefinition Id="907f02d9-97a4-416e-85de-c96834fd3288" />
+    <profileInstances>
+      <packageHasProfileInstances Id="2bcb76eb-c3ec-4263-9eb5-3d5fb574a368">
+        <profileInstance Id="ce227c87-0099-4443-a67a-af75486f28f7" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="56d2ea66-19cd-4cbc-a409-7a5d1c9dd4d4">
+        <profileInstance Id="23bcfd14-4beb-495e-8dc3-b540c586193d" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="1d782f87-2207-4ef3-ae64-d30c87137b98">
+        <profileInstance Id="912f8bbd-4fab-4746-af84-b059b0e0c865" name="GoFDesignPatterns">
+          <elementDefinition Id="b2ec555c-7ad5-4568-ac10-ebbefafe538a" />
+        </profileInstance>
+        <elementDefinition Id="74b34c67-f946-48ae-a1f7-ce09ad6bf6e5" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

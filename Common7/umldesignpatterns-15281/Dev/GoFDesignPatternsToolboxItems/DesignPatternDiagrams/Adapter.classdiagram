@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="54d5f59f-08f9-411f-8f80-e7ce5fb90482" name="Adapter" linkedPackageId="78be3084-6387-4c4c-a2f8-3f73f92cf135" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="cdc6d2b3-a784-44a2-bc23-c7456db36ace">
+      <profileInstance Id="8908a059-96c7-46d1-934c-f38e3088ac9a" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="94d2da89-431a-4977-b63c-a2bb175b0dee">
+      <profileInstance Id="c99a3358-d0e1-4735-81d7-7bb46eb38c66" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="2ecca699-b38e-47d0-a916-446b4ee50573">
+      <profileInstance Id="54fea626-8d2b-4514-b4db-9ad2b7c17721" name="GoFDesignPatterns">
+        <elementDefinition Id="b2ec555c-7ad5-4568-ac10-ebbefafe538a" />
+      </profileInstance>
+      <elementDefinition Id="74b34c67-f946-48ae-a1f7-ce09ad6bf6e5" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="3d92c72e-9577-4922-bcb2-32fe96bebe84" name="Adapter" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="6b237496-276c-47ea-aafd-9aef4eecbd61" name="Adapter" profile="GoFDesignPatterns">
+            <elementDefinition Id="593e34fb-8350-45bf-af7b-b0e6335944dc" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="fc915c51-bc0e-40a6-97dc-67d17efce73f" />
+        <generalsInternal>
+          <generalization Id="f89b0eb5-e6a7-47fe-b773-12131acce5fe" isSubstitutable="false">
+            <classMoniker Id="4a3e15d1-52d9-49e4-8a31-9612e27333c2" LastKnownName="Adaptee" />
+            <elementDefinition Id="5da6eb27-84b1-46ce-8284-079ee1c8d1b6" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="94d97356-6c04-4674-94d1-bf063ef0f7c6" name="Client" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="49b1a529-342e-419b-bf34-cf4f1687f446" />
+        <targetEnds>
+          <association Id="79fd1d0c-d0d1-4ff0-aeab-f4c7c2c53c7a" isDerived="false" sourceEndRoleName="Client" targetEndRoleName="Adapter" isLeaf="false" isAbstract="false">
+            <classMoniker Id="3d92c72e-9577-4922-bcb2-32fe96bebe84" LastKnownName="Adapter" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b139d1bc-2a17-4618-874d-63723f8db98b" name="Client" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="e9b859a4-f70d-43f8-9edb-a44fb47ae17d" name="Lower" value="1">
+                      <elementDefinition Id="36aa5f61-d086-46aa-84bb-845cf824711a" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="c3469641-8988-4e67-8cef-79406df52d69" name="Upper" value="*">
+                      <elementDefinition Id="c63f940c-17b9-4133-8751-3656151bd169" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="0df57067-adf8-40dc-9b7a-5efb402320c9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2284b66a-4d20-46a1-8b19-de3bee5ccd70" name="Adapter" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="890b2b62-0068-4bae-9242-cdc260e0dc24" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="9e991160-5ee5-4e00-b76f-4f645a557d85" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="4a3e15d1-52d9-49e4-8a31-9612e27333c2" name="Adaptee" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="87d66fbd-b8c9-45cf-a34e-d3448ea9808b" name="Adaptee" profile="GoFDesignPatterns">
+            <elementDefinition Id="70ad9940-2079-4ba1-9af6-2fe3cf258545" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="3857c0e1-a186-45a4-a6a5-8d3d2699c640" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="78be3084-6387-4c4c-a2f8-3f73f92cf135" name="DesignPatternDiagrams">
+    <elementDefinition Id="907f02d9-97a4-416e-85de-c96834fd3288" />
+  </package>
+</logicalClassDesignerModel>

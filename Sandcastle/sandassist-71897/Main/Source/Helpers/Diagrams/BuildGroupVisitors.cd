@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Sandcastle.BuildGroupVisitor" Collapsed="true">
+    <Position X="0.75" Y="2.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAQAqAABYQAAAAAAAQAAAAAAAAAAAAAhBAAAAg=</HashCode>
+      <FileName>BuildGroupVisitor.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="GroupType" />
+    </ShowAsAssociation>
+    <Lollipop Position="1.085" />
+  </Class>
+  <Class Name="Sandcastle.Conceptual.ConceptualGroupVisitor" Collapsed="true">
+    <Position X="0.75" Y="3.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAACAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Conceptual\ConceptualGroupVisitor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sandcastle.References.ReferenceGroupVisitor" Collapsed="true">
+    <Position X="0.75" Y="1.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAACAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>References\ReferenceGroupVisitor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sandcastle.References.ReferenceProjectVisitor" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAkAFABAACCAAACBAAACAIAAAAAAEAAAUgAAEAAAAAA=</HashCode>
+      <FileName>References\ReferenceProjectVisitor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sandcastle.Conceptual.ConceptualProjectVisitor" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>EAAAIEEAACCAAgCAEAACAAAwEAAAAAABACAIEAAAAAA=</HashCode>
+      <FileName>Conceptual\ConceptualProjectVisitor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="Sandcastle.BuildGroupType">
+    <Position X="3.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAEAAAA=</HashCode>
+      <FileName>BuildGroupType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

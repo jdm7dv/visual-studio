@@ -1,0 +1,21 @@
+<Project DefaultTargets="BuildAll" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>    
+  </PropertyGroup>
+  <ItemGroup>
+    <Projects Include = "*.*csproj"/> 
+  </ItemGroup>
+
+  <Target Name="BuildAll" DependsOnTargets="Clean;Build"
+	<Message Text="MSBuildToolsVersion: $(MSBuildToolsVersion)" />	 
+        <Message Text="MSBuildToolsPath:    $(MSBuildToolsPath)" />
+  </Target/>
+
+  <Target Name="Clean">
+    <MSBuild Projects="@(Projects)" Targets="Clean" />
+  </Target>  
+  
+  <Target Name="Build">
+    <MSBuild Projects="@(Projects)" Properties="Configuration=$(Configuration)" BuildInParallel="true"/>
+  </Target>
+</Project>

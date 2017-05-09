@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="70510dc1-c357-4b0f-aa8d-aa855f9f73f4" name="ScratchPad" linkedPackageId="b6cf20c8-9cf6-41c0-917d-e3e934ce600e" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <packageHasNamedElement>
+      <referencedType Id="d93b06c0-99ff-42e3-80f5-46fef4f759db" name="IObserver" isAbstract="false" isLeaf="false" cachedFullName="DesignPatternDiagrams::IObserver">
+        <elementDefinition Id="0d3c2f5e-4eb7-47f4-8dd4-e3e671fec8a5" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="82d84995-87f2-4c5c-87fb-459275e0a4e6" name="Observer4" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="98e54711-42f7-4982-92e1-2816ffb6bbb2" name="Observer" profile="GoFDesignPatterns">
+            <elementDefinition Id="5173e66b-1bb0-424c-a967-9256e34f1c46" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="801e4e66-bcde-4abc-bdbd-4c007681fc93" />
+        <suppliersInternal>
+          <interfaceRealization Id="c89ce98f-0821-48a1-b320-0d07e4454545">
+            <interfaceMoniker Id="1bb30f59-3220-4e21-99ea-83b2b35b9506" LastKnownName="IObserver4" />
+            <elementDefinition Id="31aef54d-1ba9-498a-ac01-214059ea77ca" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="ddc7b492-40e7-4d6d-8b37-f18048d9e2c5" name="notify" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="96ccab14-6d89-4bb3-83e6-2fba79b47972" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="1bb30f59-3220-4e21-99ea-83b2b35b9506" name="IObserver4" isAbstract="false" isLeaf="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="c76a0a9f-3406-4722-a8f5-8e0d6e1fa044" name="IObserver" profile="GoFDesignPatterns">
+            <elementDefinition Id="77c81433-3c93-4565-ac64-292056ea9e8c" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="3518d6a1-da20-4dc7-b742-63e8a81d1628" />
+        <targetEnds>
+          <association Id="3d71e1d5-7d17-481c-8408-1c7109bf3f07" isDerived="false" sourceEndRoleName="IObserver" targetEndRoleName="IObservable" isLeaf="false" name="Registers for notification" isAbstract="false">
+            <interfaceMoniker Id="ff3c97e1-c579-4b5a-aaaf-81feaa2a83c3" LastKnownName="IObservable4" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="54076b9c-9112-47bb-8499-273342b44aa9" name="IObserver" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="686d86ed-2841-4b03-9243-82bdd93dbc91" name="Lower" value="*">
+                      <elementDefinition Id="cc0bf367-4582-4d22-86a2-1e18c3b1dade" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="c041a246-aa28-4c62-b884-4272e738f633" name="Upper" value="*">
+                      <elementDefinition Id="5ee014bc-4d23-4476-afde-1f59b4e35e5d" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="90c79de1-da6c-4342-b328-b9ba1a507498" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2b99b737-c3e5-412e-a5d7-c01ea4548036" name="IObservable" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="43b521e4-4009-4499-bd96-fbb00b5a4b2f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c8c2d286-4e13-41db-963a-c6fbc0af7001" />
+          </association>
+        </targetEnds>
+        <ownedOperations>
+          <operation Id="84edc886-b746-436e-bbb8-28dab44336d3" name="notify" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="7fcb0293-1aaf-4458-bc0b-61555590e2e6" />
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="ff3c97e1-c579-4b5a-aaaf-81feaa2a83c3" name="IObservable4" isAbstract="false" isLeaf="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="7f854ccd-633b-4648-807e-466c3c92a073" name="IObserverable" profile="GoFDesignPatterns">
+            <elementDefinition Id="528ffe7e-0fa4-4137-a138-7fae06a60c29" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="533ec9a3-9bb4-4214-a703-b5335d4428de" />
+        <ownedOperations>
+          <operation Id="b925e075-5830-4571-8dba-609190cd0c9a" name="addObserver" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="fbb5afa2-d0e6-45a6-93aa-a5e2d0823c61" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="4fb025e7-f6b2-4326-b7e5-3f17551d041f" name="IObserver" direction="In">
+                  <elementDefinition Id="706c1384-b9c1-4cb5-bd0a-7da9cd321f97" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="d93b06c0-99ff-42e3-80f5-46fef4f759db" LastKnownName="IObserver" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="25b3a081-aeb5-48a0-9165-d25e5b97d7a6" name="removeObserver" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="1a6bebf5-9ace-4ab6-9a46-64799ec32f73" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="55c71901-8202-4589-bc8e-7caa8a206bba" name="IObserver" direction="In">
+                  <elementDefinition Id="8050d490-04d3-45c3-8f7a-7fd090a9a28a" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="d93b06c0-99ff-42e3-80f5-46fef4f759db" LastKnownName="IObserver" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="a23588e7-dccd-433b-b1cf-687fe333c566" name="Observable4" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="bf3a08e7-73d0-409a-bc1b-d6f38a82ce48" name="Observerable" profile="GoFDesignPatterns">
+            <elementDefinition Id="7460ce5d-da7d-4b56-840b-b7824fdbbe5c" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="45d8d943-ec5d-4c63-909b-240ce333b1b7" />
+        <suppliersInternal>
+          <interfaceRealization Id="343dd2dc-343a-4ee4-bf0f-e64f27c3163d">
+            <interfaceMoniker Id="ff3c97e1-c579-4b5a-aaaf-81feaa2a83c3" LastKnownName="IObservable4" />
+            <elementDefinition Id="381afd8c-8f7d-42c1-b070-20aea9e10d30" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association Id="6a802863-24b7-43c2-9787-c5a412e0b13f" isDerived="false" sourceEndRoleName="Observable" targetEndRoleName="Mulitcaster" isLeaf="false" name="Registers" isAbstract="false">
+            <classMoniker Id="898762aa-8374-40cc-9b18-95eb709e3039" LastKnownName="Multicaster3" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b157d1fd-a334-41c3-91da-55018643b63b" name="Observable" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2096976b-b007-4d03-851e-c526544a4519" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bf4d0cb3-4189-475b-8806-cdfb234bc2b4" name="Mulitcaster" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d1f120dd-afed-4c5a-87dc-7fd5a90093dd" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="86a82e62-43e3-4e1b-884b-aa345a31d1c4" />
+          </association>
+          <association Id="f54eee78-08f8-4799-ad9d-deb4fee91cbf" isDerived="false" sourceEndRoleName="Observable" targetEndRoleName="Mulitcaster" isLeaf="false" name="Notifies" isAbstract="false">
+            <classMoniker Id="898762aa-8374-40cc-9b18-95eb709e3039" LastKnownName="Multicaster3" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="739b14ea-d4a3-49f2-b0d3-1332c9ebd6b6" name="Observable" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ee602efa-2f7c-4dee-b3ee-869dc9b3212f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b7234a2f-f120-4924-bf77-6c5ba43c97e0" name="Mulitcaster" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="fc0463b8-dd09-4d89-ad2b-65c4899d6481" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4e89ef34-f393-4ded-ba1b-68567c11ea86" />
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation Id="8f77141b-38a5-4dc2-b767-dea407e92b8c" name="addObserver" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5ad843c5-edb9-4f92-9589-0424fbe89eb9" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="c9c6a406-2b49-4f49-81ee-a90406b61dab" name="IObserver" direction="In">
+                  <elementDefinition Id="659ae700-5d4f-4e98-93a2-5500cdc8b8d1" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="d93b06c0-99ff-42e3-80f5-46fef4f759db" LastKnownName="IObserver" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="cee445a8-e668-4126-b0cd-d7be9910b6a4" name="removeObserver" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a282dab7-d6d1-4246-bd3e-46588f57a4fd" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="8f426243-3ad0-403c-8091-c75a9a4488c5" name="IObserver" direction="In">
+                  <elementDefinition Id="5e4caa82-1027-47b5-b885-fa0fccb228d2" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="d93b06c0-99ff-42e3-80f5-46fef4f759db" LastKnownName="IObserver" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="898762aa-8374-40cc-9b18-95eb709e3039" name="Multicaster3" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="af1cf50d-5c80-4d5a-a4f3-5be18805e1bc" name="Multicaster" profile="GoFDesignPatterns">
+            <elementDefinition Id="03d3ff2c-50e3-40a2-b8bd-560c1c8d9316" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="19cf47b6-efb4-49da-91de-ab3d98e443fc" />
+        <targetEnds>
+          <association Id="beeaee2c-055a-45cc-bed5-809533db2342" isDerived="false" sourceEndRoleName="Mulitcaster" targetEndRoleName="IObserver" isLeaf="false" isAbstract="false">
+            <interfaceMoniker Id="1bb30f59-3220-4e21-99ea-83b2b35b9506" LastKnownName="IObserver4" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9db41987-05f8-42ee-91c8-8ab90d20c72d" name="Mulitcaster" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="4ce6625d-a276-4136-862d-17317d01c425" name="Lower" value="*">
+                      <elementDefinition Id="41793938-b122-4805-83d8-e962f2f880ee" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="f36e2e77-6c04-4846-b4a0-9f36d1a3958c" name="Upper" value="*">
+                      <elementDefinition Id="4fb4b1a2-640f-4917-aadc-cb1135a10ff1" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="67ea4052-4ed7-4bfd-814a-494a6d262461" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fbdfc5fe-2a7b-45c1-8af9-cf260ac070f1" name="IObserver" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="79e89917-e782-405d-ae9e-0016693fce39" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="1b9a8e53-f733-4621-a919-9cd99905a3c9" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c3ef6b87-d0e0-414f-896d-6c6e390bf059" name="Singleton3" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="87fe3a4a-9995-4327-92d0-eee3887f64e0" name="Singleton" profile="GoFDesignPatterns">
+            <elementDefinition Id="8ae97f00-5bcd-4d8c-8e3b-828601dd51ae" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="54e3efea-60d8-448a-bb2c-d824d6ebbee4" />
+        <ownedAttributesInternal>
+          <property Id="8bbf64fb-d9eb-4e78-bd9f-4ff5dc66bc8a" name="instance" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="db54a47e-c56e-48ba-84c5-2ec02c833c00" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="41425073-09dc-47de-936b-a07c3d22431c" name="getInstance" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="26db6465-5e6a-4bb6-b6a0-2a90d73ddbe9" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="b6cf20c8-9cf6-41c0-917d-e3e934ce600e" name="DesignPatternDiagrams">
+    <elementDefinition Id="907f02d9-97a4-416e-85de-c96834fd3288" />
+    <profileInstances>
+      <packageHasProfileInstances Id="ab0b5f04-52f2-4aa9-b4f8-83df4edf633e">
+        <profileInstance Id="330d4b80-7ac2-4c79-83d3-cb65a3b49e6a" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="c67b1c72-e023-486c-b477-6e103804f79a">
+        <profileInstance Id="bc153f23-5f0b-4e51-adfc-f47769010a99" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="4fa93de0-f74c-4a26-98b7-ad8d8f063c77">
+        <profileInstance Id="9785ebb6-f309-4e05-9080-085fbb98d908" name="GoFDesignPatterns">
+          <elementDefinition Id="b2ec555c-7ad5-4568-ac10-ebbefafe538a" />
+        </profileInstance>
+        <elementDefinition Id="74b34c67-f946-48ae-a1f7-ce09ad6bf6e5" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CD2DA1CC-FAFC-4AEF-8520-BE469C5CEC27}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sandcastle</RootNamespace>
+    <AssemblyName>Sandcastle.Core</AssemblyName>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\Sandcastle.Assist.snk</AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Output\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Output\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Documentation|AnyCPU' ">
+    <OutputPath>..\..\Output\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <DocumentationFile>..\Output\Sandcastle.Configurations.xml</DocumentationFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Analysis|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\Output\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BuildCacheStorageType.cs" />
+    <Compile Include="BuildContent.cs" />
+    <Compile Include="BuildCredential.cs" />
+    <Compile Include="BuildCredentialProvider.cs" />
+    <Compile Include="BuildDeployment.cs" />
+    <Compile Include="BuildDictionary.cs" />
+    <Compile Include="BuildDirCopier.cs" />
+    <Compile Include="BuildDirectoryPath.cs" />
+    <Compile Include="BuildFileExts.cs" />
+    <Compile Include="BuildFilePath.cs" />
+    <Compile Include="BuildFramework.cs" />
+    <Compile Include="BuildFrameworkKind.cs" />
+    <Compile Include="BuildFrameworks.cs" />
+    <Compile Include="BuildFrameworkType.cs" />
+    <Compile Include="BuildInsertType.cs" />
+    <Compile Include="BuildMultiMap.cs" />
+    <Compile Include="BuildMultiSet.cs" />
+    <Compile Include="BuildPath.cs" />
+    <Compile Include="BuildPathResolver.cs" />
+    <Compile Include="BuildPrompt.cs" />
+    <Compile Include="BuildPromptButtons.cs" />
+    <Compile Include="BuildPromptIcon.cs" />
+    <Compile Include="BuildPromptResult.cs" />
+    <Compile Include="BuildSpecialSdk.cs" />
+    <Compile Include="BuildSpecialSdkKind.cs" />
+    <Compile Include="BuildSpecialSdks.cs" />
+    <Compile Include="BuildSpecialSdkType.cs" />
+    <Compile Include="BuildStage.cs" />
+    <Compile Include="BuildState.cs" />
+    <Compile Include="BuildProperties.cs" />
+    <Compile Include="BuildSystem.cs" />
+    <Compile Include="BuildTagProvider.cs" />
+    <Compile Include="BuildTagResolver.cs" />
+    <Compile Include="BuildTuple.cs" />
+    <Compile Include="BuildType.cs" />
+    <Compile Include="CommandLine\BooleanOption.cs" />
+    <Compile Include="CommandLine\ListOption.cs" />
+    <Compile Include="CommandLine\Option.cs" />
+    <Compile Include="CommandLine\OptionCollection.cs" />
+    <Compile Include="CommandLine\ParseArgumentsResult.cs" />
+    <Compile Include="CommandLine\ParseResult.cs" />
+    <Compile Include="CommandLine\StringOption.cs" />
+    <Compile Include="CommandLine\SwitchOption.cs" />
+    <Compile Include="Contents\CategoryContent.cs" />
+    <Compile Include="Contents\CategoryItem.cs" />
+    <Compile Include="Contents\CodeSnippetLanguage.cs" />
+    <Compile Include="Contents\CommentContent.cs" />
+    <Compile Include="Contents\CommentItem.cs" />
+    <Compile Include="Contents\CommentItemType.cs" />
+    <Compile Include="Contents\CommentPart.cs" />
+    <Compile Include="Contents\CommentPartType.cs" />
+    <Compile Include="Contents\ConfiguratorContent.cs" />
+    <Compile Include="Contents\ConfiguratorItem.cs" />
+    <Compile Include="Contents\HierarchicalTocContent.cs" />
+    <Compile Include="Contents\HierarchicalTocItem.cs" />
+    <Compile Include="Contents\HierarchicalTocNode.cs" />
+    <Compile Include="Contents\IncludeContent.cs" />
+    <Compile Include="Contents\IncludeItem.cs" />
+    <Compile Include="Contents\KeywordContent.cs" />
+    <Compile Include="Contents\KeywordItem.cs" />
+    <Compile Include="Contents\KeywordType.cs" />
+    <Compile Include="Contents\MathCommandContent.cs" />
+    <Compile Include="Contents\MathCommandItem.cs" />
+    <Compile Include="Contents\MathNamingMethod.cs" />
+    <Compile Include="Contents\MathPackageContent.cs" />
+    <Compile Include="Contents\MathPackageItem.cs" />
+    <Compile Include="Contents\MediaImageArea.cs" />
+    <Compile Include="Contents\MediaImageAreaShape.cs" />
+    <Compile Include="Contents\MediaImageMap.cs" />
+    <Compile Include="Contents\MediaSizeUnit.cs" />
+    <Compile Include="Contents\ScriptContent.cs" />
+    <Compile Include="Contents\ScriptItem.cs" />
+    <Compile Include="Contents\SnippetContent.cs" />
+    <Compile Include="Contents\SnippetItem.cs" />
+    <Compile Include="Contents\SnippetLanguage.cs" />
+    <Compile Include="Contents\TocItemSourceType.cs" />
+    <Compile Include="Deployments\DirectoryDeployment.cs" />
+    <Compile Include="Deployments\FtpDeployment.cs" />
+    <Compile Include="IBuildContent.cs" />
+    <Compile Include="IBuildItem.cs" />
+    <Compile Include="IBuildNamedList.cs" />
+    <Compile Include="Utilities\PathSearch.cs" />
+    <Compile Include="BuildException.cs" />
+    <Compile Include="BuildExceptions.cs" />
+    <Compile Include="BuildIntegrationTarget.cs" />
+    <Compile Include="BuildItem.cs" />
+    <Compile Include="BuildKeyedList.cs" />
+    <Compile Include="BuildLinkTargetType.cs" />
+    <Compile Include="BuildLinkType.cs" />
+    <Compile Include="BuildList.cs" />
+    <Compile Include="BuildListChangeType.cs" />
+    <Compile Include="BuildListEventArgs.cs" />
+    <Compile Include="BuildLogger.cs" />
+    <Compile Include="BuildLoggerLevel.cs" />
+    <Compile Include="BuildLoggers.cs" />
+    <Compile Include="BuildLoggerVerbosity.cs" />
+    <Compile Include="BuildNotifier.cs" />
+    <Compile Include="BuildObject.cs" />
+    <Compile Include="BuildObjectT.cs" />
+    <Compile Include="Contents\BibliographyContent.cs" />
+    <Compile Include="Contents\BibliographyItem.cs" />
+    <Compile Include="Contents\DependencyContent.cs" />
+    <Compile Include="Contents\DependencyItem.cs" />
+    <Compile Include="Contents\MediaContent.cs" />
+    <Compile Include="Contents\MediaItem.cs" />
+    <Compile Include="Contents\MediaItemType.cs" />
+    <Compile Include="Contents\AttributeContent.cs" />
+    <Compile Include="Contents\AttributeItem.cs" />
+    <Compile Include="Contents\StyleSheetContent.cs" />
+    <Compile Include="Contents\StyleSheetItem.cs" />
+    <Compile Include="Contents\XslTransformContent.cs" />
+    <Compile Include="Contents\XslTransformItem.cs" />
+    <Compile Include="Contents\ResourceContent.cs" />
+    <Compile Include="Contents\ResourceItem.cs" />
+    <Compile Include="Contents\RuleContent.cs" />
+    <Compile Include="Contents\RuleItem.cs" />
+    <Compile Include="Contents\SharedContent.cs" />
+    <Compile Include="Contents\SharedItem.cs" />
+    <Compile Include="Contents\CodeSnippetContent.cs" />
+    <Compile Include="Contents\CodeSnippetItem.cs" />
+    <Compile Include="Contents\TocContent.cs" />
+    <Compile Include="Contents\TocItem.cs" />
+    <Compile Include="Contents\TokenContent.cs" />
+    <Compile Include="Contents\TokenItem.cs" />
+    <Compile Include="IBuildNamedItem.cs" />
+    <Compile Include="Loggers\ConsoleLogger.cs" />
+    <Compile Include="Loggers\FileLogger.cs" />
+    <Compile Include="Loggers\HtmlLogger.cs" />
+    <Compile Include="Loggers\NoneLogger.cs" />
+    <Compile Include="Loggers\XamlLogger.cs" />
+    <Compile Include="Loggers\XmlLogger.cs" />
+    <Compile Include="Utilities\DirectoryUtils.cs" />
+    <Compile Include="Utilities\DirectoryCopier.cs" />
+    <Compile Include="Utilities\PathUtils.cs" />
+    <Compile Include="Utilities\ProcessEventArgs.cs" />
+    <Compile Include="Utilities\ProcessExitedEventArgs.cs" />
+    <Compile Include="Utilities\ProcessInfo.cs" />
+    <Compile Include="Utilities\ProcessRunner.cs" />
+    <Compile Include="Utilities\ProcessStartedEventArgs.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\XmlUtils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Sandcastle.Assist.snk">
+      <Link>Sandcastle.Assist.snk</Link>
+    </None>
+    <None Include="Diagrams\BuildContents.cd" />
+    <None Include="Diagrams\BuildItems.cd" />
+    <None Include="Diagrams\BuildLoggers.cd" />
+    <None Include="Diagrams\BuildObjects.cd" />
+    <None Include="Diagrams\Utilities.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{B4F97281-0DBD-4835-9ED8-7DFB966E87FF}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HtmlLogCss.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Diagrams\BuildLists.cd" />
+    <None Include="Resources\HtmlLogJs.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

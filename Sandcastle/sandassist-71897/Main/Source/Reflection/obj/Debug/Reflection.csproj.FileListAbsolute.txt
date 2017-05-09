@@ -1,0 +1,6 @@
+C:\Users\Jonathan_Moore\Desktop\sandassist-71897\Main\Output\Sandcastle.Reflection.dll
+C:\Users\Jonathan_Moore\Desktop\sandassist-71897\Main\Output\Sandcastle.Reflection.pdb
+C:\Users\Jonathan_Moore\Desktop\sandassist-71897\Main\Source\Reflection\obj\Debug\Reflection.Cci.ExceptionStrings.resources
+C:\Users\Jonathan_Moore\Desktop\sandassist-71897\Main\Source\Reflection\obj\Debug\Reflection.csproj.GenerateResource.Cache
+C:\Users\Jonathan_Moore\Desktop\sandassist-71897\Main\Source\Reflection\obj\Debug\Sandcastle.Reflection.dll
+C:\Users\Jonathan_Moore\Desktop\sandassist-71897\Main\Source\Reflection\obj\Debug\Sandcastle.Reflection.pdb

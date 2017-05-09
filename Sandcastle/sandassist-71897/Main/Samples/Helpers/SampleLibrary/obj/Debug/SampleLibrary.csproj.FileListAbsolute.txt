@@ -1,0 +1,8 @@
+C:\Users\Jonathan_Moore\Desktop\sandassist-71897\Main\Samples\Helpers\SampleLibrary\Output\Project.xml
+C:\Users\Jonathan_Moore\Desktop\sandassist-71897\Main\Samples\Helpers\SampleLibrary\Output\TestLibrary.xml
+C:\Users\Jonathan_Moore\Desktop\sandassist-71897\Main\Samples\Helpers\SampleLibrary\Output\TestLibrary.dll
+C:\Users\Jonathan_Moore\Desktop\sandassist-71897\Main\Samples\Helpers\SampleLibrary\Output\TestLibrary.pdb
+C:\Users\Jonathan_Moore\Desktop\sandassist-71897\Main\Samples\Helpers\SampleLibrary\obj\Debug\TestLibrary.Properties.Resources.resources
+C:\Users\Jonathan_Moore\Desktop\sandassist-71897\Main\Samples\Helpers\SampleLibrary\obj\Debug\SampleLibrary.csproj.GenerateResource.Cache
+C:\Users\Jonathan_Moore\Desktop\sandassist-71897\Main\Samples\Helpers\SampleLibrary\obj\Debug\TestLibrary.dll
+C:\Users\Jonathan_Moore\Desktop\sandassist-71897\Main\Samples\Helpers\SampleLibrary\obj\Debug\TestLibrary.pdb

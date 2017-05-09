@@ -1,0 +1,11 @@
+C:\Users\Jonathan_Moore\Documents\Visual Studio 2010\VSShellStub2\VSShellStub2\ShellExtensionsVSIX\bin\Debug\extension.vsixmanifest
+C:\Users\Jonathan_Moore\Documents\Visual Studio 2010\VSShellStub2\VSShellStub2\ShellExtensionsVSIX\bin\Debug\VSShellStub2.AboutBoxPackage.dll
+C:\Users\Jonathan_Moore\Documents\Visual Studio 2010\VSShellStub2\VSShellStub2\ShellExtensionsVSIX\bin\Debug\Microsoft.VisualStudio.Settings.dll
+C:\Users\Jonathan_Moore\Documents\Visual Studio 2010\VSShellStub2\VSShellStub2\ShellExtensionsVSIX\bin\Debug\VSShellStub2.AboutBoxPackage.pdb
+C:\Users\Jonathan_Moore\Documents\Visual Studio 2010\VSShellStub2\VSShellStub2\ShellExtensionsVSIX\bin\Debug\Microsoft.VisualStudio.Settings.xml
+C:\Users\Jonathan_Moore\Documents\Visual Studio 2010\VSShellStub2\VSShellStub2\ShellExtensionsVSIX\obj\Debug\ShellExtensionsVSIX.csprojResolveAssemblyReference.cache
+C:\Users\Jonathan_Moore\Documents\Visual Studio 2010\VSShellStub2\VSShellStub2\ShellExtensionsVSIX\obj\Debug\ShellExtensionsVSIX.dll
+C:\Users\Jonathan_Moore\Documents\Visual Studio 2010\VSShellStub2\VSShellStub2\ShellExtensionsVSIX\obj\Debug\ShellExtensionsVSIX.pdb
+C:\Users\Jonathan_Moore\Documents\Visual Studio 2010\VSShellStub2\VSShellStub2\ShellExtensionsVSIX\obj\Debug\extension.vsixmanifest
+C:\Users\Jonathan_Moore\Documents\Visual Studio 2010\VSShellStub2\VSShellStub2\ShellExtensionsVSIX\bin\Debug\ShellExtensionsVSIX.vsix
+C:\Users\Jonathan_Moore\Documents\Visual Studio 2010\VSShellStub2\VSShellStub2\ShellExtensionsVSIX\bin\Debug\ProjectTemplates\WindowsFormsApplication1.zip

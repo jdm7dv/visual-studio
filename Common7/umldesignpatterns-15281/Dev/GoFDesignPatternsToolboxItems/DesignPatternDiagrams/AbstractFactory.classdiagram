@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="34c9af27-d608-49d9-826c-3dd3d95f420e" name="AbstractFactory" linkedPackageId="b3e2b2f4-d0c6-4b62-b614-215eb5dbf2c6" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="c81d7bea-ebc6-4c98-8c0a-1ef06c644931">
+      <profileInstance Id="9f278475-c3e5-4c2f-b9d4-05bdbff080da" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="23db5556-847d-4c8d-b8a0-ba9f1ab9d368">
+      <profileInstance Id="7c7a3e01-f9e0-4528-a6fb-cda610a53b15" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="c6c51c90-8297-4524-8aae-76fa7ad03b88">
+      <profileInstance Id="ba92c554-0a64-4d19-837b-0c1be5e7afeb" name="GoFDesignPatterns">
+        <elementDefinition Id="b2ec555c-7ad5-4568-ac10-ebbefafe538a" />
+      </profileInstance>
+      <elementDefinition Id="74b34c67-f946-48ae-a1f7-ce09ad6bf6e5" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="5fd1c2bb-1e85-40da-adc1-aa91133d049f" name="CreatorRequestor" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="7ccd5f25-21cb-4d8e-a28c-b1956843d3d4" />
+        <targetEnds>
+          <association Id="ced6056f-7168-423c-8536-22680a8e1851" isDerived="false" sourceEndRoleName="CreatorRequestor" targetEndRoleName="IFactory" isLeaf="false" name="requests creation" isAbstract="false">
+            <interfaceMoniker Id="f94c4d3d-3eee-4481-a8b8-9733a0f0c001" LastKnownName="IFactory" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d630a884-2769-4d1c-a71e-ed399f41f7a4" name="CreatorRequestor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b8295156-9937-4b8f-885e-5ba168be6e12" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4716fca5-ebd4-4822-895e-590a59fdff22" name="IFactory" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="4b362176-c008-4699-88f7-5bc5fa75b24e" name="Lower" value="*">
+                      <elementDefinition Id="cbcefebd-22f2-43b2-bda2-7f3d2ab2c700" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="7f2a9c1e-963b-41d6-8b3f-7b7fe4fc8fae" name="Upper" value="*">
+                      <elementDefinition Id="0d58de68-c1c1-43f2-98fb-dfdba9bcb593" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="b1e37fc4-c38f-4f6d-b1d3-6187c8aa076e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="55cdf43b-0929-40f8-b71f-eec80caa8a67" />
+          </association>
+          <association Id="520302e1-f417-4c11-9f45-7dd10f8a37a2" isDerived="false" sourceEndRoleName="CreatorRequestor" targetEndRoleName="AbstractProduct" isLeaf="false" name="uses" isAbstract="false">
+            <classMoniker Id="b92a1c38-e7d2-4466-a74a-f1452e895de8" LastKnownName="AbstractProduct" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c96c38b8-2524-4b47-b7af-da560e3877f1" name="CreatorRequestor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="73810d7f-1d8b-4c13-b19d-4ee548a15a9f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f0a920fb-f76b-493c-9e1f-b7bafe549451" name="AbstractProduct" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="5720c458-033a-438a-9510-04b07605cae9" name="Lower" value="*">
+                      <elementDefinition Id="8f71c269-5c6c-4baa-aa85-9aa8bd6aaad7" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="38ac064a-9b37-4803-be54-f1e48d32d58d" name="Upper" value="*">
+                      <elementDefinition Id="dd218c81-4fbf-4b29-9999-e9008930e520" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="a24b6998-6421-47e7-81f4-327a02dc60f5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="57dfd921-bad9-45d7-ad2b-15703701b5cf" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="f94c4d3d-3eee-4481-a8b8-9733a0f0c001" name="IFactory" isAbstract="false" isLeaf="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="545e1e6e-a0c6-4b76-aa76-979637b8bc55" name="IFactory" profile="GoFDesignPatterns">
+            <elementDefinition Id="2f9956cd-2235-4f8a-8b73-1f45b0b9572d" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="34fbf122-f14e-438a-99e9-ce444f5162b7" />
+        <ownedOperations>
+          <operation Id="13abcf97-b6b7-4216-843e-d2762329b4ce" name="createProduct" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="dc52f608-687e-473d-b9dc-3d2e59643ea4" />
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="22de5b2d-1fc7-4f54-bc51-ad804a1d1da3" name="AbstractFactory" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="e252360f-787c-4f3d-a2fc-1e38dbeb55d8" name="AbstractFactory" profile="GoFDesignPatterns">
+            <elementDefinition Id="fa01de25-2d3f-41bd-b0da-c420c6f3db22" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="0b90f1ff-a0f9-4742-b325-96d83981f783" />
+        <suppliersInternal>
+          <interfaceRealization Id="5934696a-6416-4a42-9428-99470aa8f2b6">
+            <interfaceMoniker Id="f94c4d3d-3eee-4481-a8b8-9733a0f0c001" LastKnownName="IFactory" />
+            <elementDefinition Id="0457b76a-d95b-4b5f-b39b-dc076b0d62bf" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="2fdf6366-4485-4029-9953-fe0604d8e047" name="getFactory" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="96be5696-5da7-42e8-89e1-77df6db6ae75" />
+          </operation>
+          <operation Id="a2b7edf8-3277-4fd4-a941-b968d3eee61a" name="createProduct" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="edd8e1f4-e305-445b-b437-121bb29436c0" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="4c6cec7b-d2fe-4b72-8ff6-d4533d39a444" name="ConcreteFactory" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e462e9dd-988c-46a7-9279-51969edc39fa" />
+        <generalsInternal>
+          <generalization Id="ce8824d3-4552-47bc-9b98-862d9c54b396" isSubstitutable="false">
+            <classMoniker Id="22de5b2d-1fc7-4f54-bc51-ad804a1d1da3" LastKnownName="AbstractFactory" />
+            <elementDefinition Id="b0e8e4e8-6dee-4a67-8d7d-5a3b98a7c2f0" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="312d964f-74d4-4400-acab-531a09100ffb" isDerived="false" sourceEndRoleName="ConcreteFactory" targetEndRoleName="Product" isLeaf="false" name="creates" isAbstract="false">
+            <classMoniker Id="f481f4a8-9062-438a-9811-55dd01864503" LastKnownName="Product" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b972413a-7de6-433e-aeba-1f9d06592b98" name="ConcreteFactory" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="39681db7-e059-435c-9b4e-320cd4c99948" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d38d53f8-9ce8-48d9-b7b4-9cf2e4bde977" name="Product" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="ed240830-f7fe-4826-9238-f523f32a6e11" name="Lower" value="*">
+                      <elementDefinition Id="2be1b708-0010-44c4-8fc7-ab54e910ca44" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="69eff267-c738-4f2b-b6ce-ebeba0cafb7d" name="Upper" value="*">
+                      <elementDefinition Id="ab411f82-76cb-413a-861a-bff5e418d693" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="878328ec-0de5-403b-a92e-6259cb92471f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="88005b0d-6d16-4597-bfd0-4ca496fa964c" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="b92a1c38-e7d2-4466-a74a-f1452e895de8" name="AbstractProduct" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="76e40ae9-e64a-4e09-87c5-5394caa09cc7" name="AbstractProduct" profile="GoFDesignPatterns">
+            <elementDefinition Id="01762477-d40a-417d-aa22-386974bb85ba" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="e78e6877-5ca9-4e79-9150-cea02226ef2d" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f481f4a8-9062-438a-9811-55dd01864503" name="Product" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="5f210bcc-71c1-4ef4-8abe-cae555c70862" name="Product" profile="GoFDesignPatterns">
+            <elementDefinition Id="307b3b83-0501-499c-9849-45bc5ca1c720" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="5a860183-8434-4fa5-9578-dd383c8eefeb" />
+        <generalsInternal>
+          <generalization Id="637719d9-c3b9-423f-9ef2-9bc0a5ac8615" isSubstitutable="false">
+            <classMoniker Id="b92a1c38-e7d2-4466-a74a-f1452e895de8" LastKnownName="AbstractProduct" />
+            <elementDefinition Id="3ea40b43-5d88-443c-8d78-57bcd0060968" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="b3e2b2f4-d0c6-4b62-b614-215eb5dbf2c6" name="DesignPatternDiagrams">
+    <elementDefinition Id="907f02d9-97a4-416e-85de-c96834fd3288" />
+  </package>
+</logicalClassDesignerModel>

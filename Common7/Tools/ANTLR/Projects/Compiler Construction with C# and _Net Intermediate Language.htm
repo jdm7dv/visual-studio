@@ -1,0 +1,384 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0053)http://www.cl.cam.ac.uk/teaching/0910/CompConstr/NEJ/ -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2 Final//EN" ""><HTML><HEAD><META 
+content="IE=10.000" http-equiv="X-UA-Compatible">
+   
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">   
+<TITLE>Compiler Construction with C# and .Net Intermediate Language</TITLE> 
+<META name="GENERATOR" content="MSHTML 10.00.9200.16578"></HEAD> 
+<BODY>
+<H1>Compiler Construction: With C# and DotNet Intermediate Language</H1>
+<P>These notes and example programs augment the introductory  <I>Compiler 
+Construction</I> course given by Dr. Mycroft.  The course itself covers the 
+fundamental principles, and some of the practice, of implementing compilers in a 
+modern language. 
+<P>This webpage builds on this with working examples showing how modern compiler 
+tools (ANTLR) and modern implementation language (C#) can be used to construct a 
+compiler for a simple high-level C-like language, and targetting the 
+recently-introduced DotNet intermediate language from Microsoft. 
+<P>A <A 
+href="http://www.cl.cam.ac.uk/teaching/0910/CompConstr/NEJ/report.pdf">report</A> 
+going into further details of the programs presented here is available. <!-- ==================================================================== --> 
+<HR>
+
+<H2>1. Hello World</H2>
+<P>The first example presented here shows the output of three compilers and 
+their target languages.  All example source and target code is available for <A 
+href="http://www.cl.cam.ac.uk/teaching/0910/CompConstr/NEJ/hello.zip">download</A>. 
+<OL>
+  <LI><B>C</B> 
+  <P>
+  <TABLE border="2" cellpadding="10">
+    <TBODY>
+    <TR>
+      <TD>
+<PRE>#include &lt;stdio.h&gt;
+
+int main( void )
+{
+    puts( "Hello World!" );
+    return 0;
+}
+</PRE></TD></TR></TBODY></TABLE>
+  <P>When compiled with GCC for a PowerPC processor running Mac OSX, the output 
+  is: 
+  <P>
+  <TABLE border="2" cellpadding="10">
+    <TBODY>
+    <TR>
+      <TD>
+<PRE>.data
+.cstring
+        .align 2
+LC0:
+        .ascii "Hello World!\0"
+.text
+        .align 2
+        .globl _main
+_main:
+        mflr r0
+        stmw r30,-8(r1)
+        stw r0,8(r1)
+        stwu r1,-80(r1)
+        mr r30,r1
+        bcl 20,31,L1$pb
+L1$pb:
+        mflr r31
+        addis r3,r31,ha16(LC0-L1$pb)
+        la r3,lo16(LC0-L1$pb)(r3)
+        bl L_puts$stub
+        li r0,0
+        mr r3,r0
+        lwz r1,0(r1)
+        lwz r0,8(r1)
+        mtlr r0
+        lmw r30,-8(r1)
+        blr
+.data
+.picsymbol_stub
+L_puts$stub:
+        .indirect_symbol _puts
+        mflr r0
+        bcl 20,31,L0$_puts
+L0$_puts:
+        mflr r11
+        addis r11,r11,ha16(L_puts$lazy_ptr-L0$_puts)
+        mtlr r0
+        lwz r12,lo16(L_puts$lazy_ptr-L0$_puts)(r11)
+        mtctr r12
+        addi r11,r11,lo16(L_puts$lazy_ptr-L0$_puts)
+        bctr
+.data
+.lazy_symbol_pointer
+L_puts$lazy_ptr:
+        .indirect_symbol _puts
+        .long dyld_stub_binding_helper
+</PRE></TD></TR></TBODY></TABLE><!-- ==================================================================== --> 
+  <LI><B>Java and the JVM</B> 
+  <P>Again, here is the basic hello world program in Java: 
+  <P>
+  <TABLE border="2" cellpadding="10">
+    <TBODY>
+    <TR>
+      <TD>
+<PRE>public class Hello 
+{
+    public static void main( String[] args )
+    {
+        System.out.print( "Hello world.\n" );
+    }
+}
+</PRE></TD></TR></TBODY></TABLE>
+  <P>The Java compiler, <I>javac</I>, compiles this into JVM bytecodes, which 
+  are then  interpreted by the Java runtime.  For this example, note the 
+  difference in the number of instructions in the program compared to the 
+  native-compiled C example above. 
+  <P>
+  <TABLE border="2" cellpadding="10">
+    <TBODY>
+    <TR>
+      <TD>
+<PRE>Method Hello()
+   0 aload_0
+   1 invokespecial #1 &lt;Method java.lang.Object()&gt;
+   4 return
+
+Method void main(java.lang.String[])
+   0 getstatic #2 &lt;Field java.io.PrintStream out&gt;
+   3 ldc #3 &lt;String "Hello world.
+"&gt;
+   5 invokevirtual #4 &lt;Method void print(java.lang.String)&gt;
+   8 return
+</PRE></TD></TR></TBODY></TABLE>
+  <P>Far fewer instructions.  Why is this? <!-- ==================================================================== --> 
+  </P>
+  <LI><B>C# and DotNet</B> 
+  <P>Finally, here is the C# version and the corresponding DotNet Intermediate 
+  Code: 
+  <P>
+  <TABLE border="2" cellpadding="10">
+    <TBODY>
+    <TR>
+      <TD>
+<PRE>using System;
+
+public class HelloApp
+{
+    public static void Main()
+    {
+        Console.WriteLine( "Hello World!" );
+    }
+}
+</PRE></TD></TR></TBODY></TABLE>
+  <P>The Java compiler, <I>javac</I>, compiles this into JVM bytecodes, which 
+  are then  interpreted by the Java runtime.  For this example, note the 
+  difference in the number of instructions in the program compared to the 
+  native-compiled C example above. 
+  <P>
+  <TABLE border="2" cellpadding="10">
+    <TBODY>
+    <TR>
+      <TD>
+<PRE>.class public auto ansi beforefieldinit HelloApp
+       extends [mscorlib]System.Object
+{
+  .method public hidebysig static void  Main() cil managed
+  {
+    .entrypoint
+    // Code size       11 (0xb)
+    .maxstack  1
+    IL_0000:  ldstr      "Hello World!"
+    IL_0005:  call       void [mscorlib]System.Console::WriteLine(string)
+    IL_000a:  ret
+  } // end of method HelloApp::Main
+
+  .method public hidebysig specialname rtspecialname 
+          instance void  .ctor() cil managed
+  {
+    // Code size       7 (0x7)
+    .maxstack  1
+    IL_0000:  ldarg.0
+    IL_0001:  call       instance void [mscorlib]System.Object::.ctor()
+    IL_0006:  ret
+  } // end of method HelloApp::.ctor
+
+} // end of class HelloApp
+
+</PRE></TD></TR></TBODY></TABLE>
+  <P>Note that this is a subset of the output of the disassembler showing just 
+  the actual executable code. </P></LI></OL><!-- ==================================================================== --> <!-- ==================================================================== --> <!-- ==================================================================== --> 
+<HR>
+
+<P>From this point on we will use C# and DotNet as the implementation language
+ and the target code respectively.  To compile and run these examples you will 
+need some form of DotNet runtime.  There are currently two main versions: 
+<OL>
+  <LI>Microsoft DotNet 
+  <P>The basic requirement is a C# compiler and the DotNet runtime.  There are 
+  two versions available, the commercial version, and the research-oriented 
+  <I>ROTOR</I> project.  There is a free, cut-down, version of the commercial 
+  version, and ROTOR is free. 
+  <UL>
+    <LI><A href="http://msdn.microsoft.com/netframework/downloads/updates/default.aspx">Microsoft 
+    Free DotNet download (Windows only)</A>     
+    <LI><A href="http://www.microsoft.com/downloads/details.aspx?FamilyID=3a1c93fa-7462-47d0-8e56-8dd34c6292f0&amp;displaylang=en">Microsoft 
+    ROTOR download (Windows, FreeBSD and Mac OS X)</A> </LI></UL>
+  <P></P>
+  <LI>Mono     
+  <P>The Mono Project is creating an open-source implementation of the C# and 
+  DotNet runtime as defined by the ECMA Standards that describe them.  It has 
+  been ported to many operating systems, notably Linux, Mac OSX and Windows. 
+  <UL>
+    <LI><A href="http://www.mono-project.com/">Mono</A> </LI></UL></LI></OL><!-- ==================================================================== --> 
+<HR>
+
+<H2>2. Four-Function Calculator</H2>
+<P>Two versions of the basic exeercise are presented, one using the 
+recursive-descent techniques presented in the lecture course, the other using 
+the compiler-generator tool  <A href="http://www.antlr.org/">ANTLR</A>. <!-- ==================================================================== --> 
+<H3>Hand-written recursive-descent parser.</H3>
+<P><A 
+href="http://www.cl.cam.ac.uk/teaching/0910/CompConstr/NEJ/4calc.zip">Download 
+files</A> 
+<P>To build the executable, you need a DotNet system installed (either Rotor or 
+the full version). Then compile the application with: 
+<P><KBD>csc 4calc.cs</KBD> 
+<P>and run with: 
+<P><KBD>clix 4calc.exe</KBD> 
+<P>Enter expressions as you would expect, terminating each expressions with ';' 
+(they can span multiple lines) and hit Return to evaluate them and display the 
+result. To quit, enter Ctrl-D followed by Return. <!-- ==================================================================== --> 
+<H3>Four-Function Calculator using ANTLR</H3>
+<P>This is a version of the 4-function calculator using  <A href="http://www.antlr.org/">ANTLR</A> 
+to generate a lexer and parser automatically  from grammer rules. 
+<P><A 
+href="http://www.cl.cam.ac.uk/teaching/0910/CompConstr/NEJ/ANTLR4func.zip">Download 
+files</A> 
+<P>You will need to install ANTLR before you can compile and run this example.
+ How you achieve this will depend on which platform you are running on.   For 
+Rotor on MAC OSX, you cannot compile up the parts of the ANTLR runtime that use 
+ the Windows <KBD>Forms</KBD> libraries, which are not included in Rotor.   
+<P>The user interface is exactly the same as for the hand-written parser 
+version.  However the internal operation is completely different.  Whereas the 
+earlier version computed intermediate results as soon as a rule was matched 
+(e.g., "1+2" -&gt; 3) the ANTLR-generated version first constructs a parse-tree 
+of the input, and only <I>then</I> does the tree walker traverse the tree 
+bottom-up computing the result. <!-- ==================================================================== --> 
+<HR>
+
+<H2><I>Elisa</I> --- A Simple Programming Language and its Compiler</H2>
+<P><A 
+href="http://www.cl.cam.ac.uk/teaching/0910/CompConstr/NEJ/Elisa.zip">Download 
+files</A> 
+<P><I>Elisa</I> is a simple C-like language with sufficient constructs to be 
+able to write working programs that demonstrate the basics of a compiler.  It is 
+<I>not</I> meant to be a fully-developed programming language to write the next 
+greatest operating system, but it could form the start of many student projects 
+to build compilers or code analysers. 
+<P>The <I>Elisa</I> language has a few simple operators, integers and arrays of 
+integers, and functions. 
+<P>The compiler itself consists of a handful of files, brought together by a 
+Makefile: 
+<P>
+<TABLE>
+  <TBODY>
+  <TR>
+    <TD><KBD>Elisa.cs</KBD></TD>
+    <TD>The main compiler driver: processes command line flags, then calls the 
+      parser and code generator. </TR>
+  <TR>
+    <TD><KBD>CodeGen.cs</KBD></TD>
+    <TD>This is the code generator interface, which defines the functionality 
+      that a code generator must provide.</TD></TR>
+  <TR>
+    <TD><KBD>DotNetCodeGen.cs</KBD></TD>
+    <TD>A specific instance of the Code Generator class which generates DotNet 
+      output.</TD></TR>
+  <TR>
+    <TD><KBD>Symboltable.cs</KBD></TD>
+    <TD>Type, symbol, and symbol table classes.</TD></TR>
+  <TR>
+    <TD><KBD>ElisaParser.g</KBD></TD>
+    <TD>The ANTLR lexer and grammar file for <I>Elisa</I>.  As for the 
+      four-function calculator above, this single file encompasses the lexer, 
+      the parser, and the parse tree walker.</TD></TR></TBODY></TABLE>
+<P>The syntax of <I>Elisa</I> looks very much like C (or any other Algol-derived 
+programming  language).  It has: 
+<UL>
+  <LI>Statements     
+  <UL>
+    <LI><KBD>if</KBD> <I>e</I> statement [<KBD>else</KBD> statement]         
+    <LI><KBD>while</KBD> <I>e</I> statement         
+    <LI><KBD>return</KBD> <I>e</I>     </LI></UL>
+  <LI>Expressions     
+  <UL>
+    <LI>assignment         
+    <LI>bitwise: and, or, exor, complement         
+    <LI>relational: equal, not-equal, greater, less-than, not         
+    <LI>arithmetic: add, subtract, times, divide, modulo         
+    <LI>shift: left, right     </LI></UL>
+  <LI>single-dimension arrays     
+  <LI>functions, taking zero or more arguments and optionally returning a 
+  single-value result     
+  <LI>special functions <KBD>put()</KBD> and <KBD>get()</KBD> for communicating 
+  with the outside     world     
+  <LI>comments start with double-slash "//" </LI></UL>For example, here is a 
+bubblesort function in <I>Elisa</I>: 
+<P>
+<TABLE border="2" cellpadding="10">
+  <TBODY>
+  <TR>
+    <TD>
+<PRE>// Integer bubblesort
+// Takes an array of integers and the number of elements in the array
+// and sorts them in-place
+
+int bubblesort(int a[], int n)
+{
+    int t;
+    int i;
+    int done;
+
+    done = 0;
+
+    while (!done) {
+        i = 1;
+        done = 1;
+        while (i &lt; n) {
+            if (a[i - 1] &gt; a[i]) {
+                done     = 0;
+                t        = a[i - 1];
+                a[i - 1] = a[i];
+                a[i]     = t;
+            }
+            i = i + 1;
+        }
+    }
+
+    return 0;
+}
+</PRE></TD></TR></TBODY></TABLE>
+<P>Note, there is already a simplified C compiler example project in the ROTOR
+ package, called <I>MyC</I>, as well as a simplified LISP interpreter/compiler.
+ You might wish to compare the compiler for Elisa with the MyC compiler. <!-- ==================================================================== --> 
+<HR>
+
+<H2>Links To Related Material</H2>
+<UL>
+  <LI>
+  <H3><A href="http://www.cs.princeton.edu/software/lcc/">LCC.Net</A></H3>
+  <P>LCC is an open-source ANSI-compliant C compiler described in the book	 <A 
+  href="http://www.amazon.co.uk/exec/obidos/ASIN/0805316701/lccaretargcco-20">A 
+  	Retargetable C Compiler: Design and Implementation</A>.	The compiler is about 
+  20,000 lines of uncommented C (about 11,000 for the	compiler front-end, and 
+  then a few thousand lines for each backend target	code generator), so you need 
+  the book	(which actually does a good job of explaining the compiler, even 
+  though the	book is written for version 3.6 of the compiler).		 
+  <P>Version 4.2 now has a DotNet backend, which is a separate download from the 
+  MS	site due to licensing issues.			 <!-- ==================================================================== -->
+	 
+  <P></P>
+  <LI>
+  <H3><A href="http://iti.spbu.ru/eng/grants/Cflat.asp">Cflat</A></H3>
+  <P>This is/was a subset-C compiler developed to help teach advanced compiler
+  	technology at St. Petersburg State University IT Research Institute.		 <!-- ==================================================================== -->
+  		 
+  <P></P>
+  <LI>
+  <H3><A href="http://www.antlr.org/">ANTLR</A></H3>
+  <P>ANTLR is a tool for automagically generating recognizers, compilers and
+  	translators (the acronym stands for ANother Tool for Language Recognition).
+  	It generates tools in Java, C# or C++, and there is considerable support	for 
+  this tool (i.e., lots of goodies to download).  There are ready-made	parsers 
+  for many languages: Gnu C, Ada, HTML, Java, Verilog, Pascal, SQL,	C++, VRML, 
+  and so on.	 <!-- ==================================================================== -->
+  		 
+  <P></P>
+  <LI>
+  <H3><A href="http://www.nongnu.org/grammatica/">Grammatica</A></H3>
+  <P>Grammatica is another parser generator, in the same vein as ANTLR.  It
+  	generates Java or C# parsers, and seems quite a nice little package.  It
+  	generates LL(k) (top-down) parsers with better error message handling.			 
+  </P></LI></UL><!-- ==================================================================== --> 
+<HR>
+</BODY></HTML>

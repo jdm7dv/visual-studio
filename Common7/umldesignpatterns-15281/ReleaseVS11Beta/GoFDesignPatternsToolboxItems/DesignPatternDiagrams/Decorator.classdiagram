@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="d5c1d231-ac60-4bf9-8ce4-7e04d174ef20" name="Decorator" linkedPackageId="9daad679-fbec-4b47-afad-157304ef7107" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="db1e151f-7381-4d38-b643-804b4764d894">
+      <profileInstance Id="04050e5e-a7cc-4eb7-8e33-988c6e050184" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="ee0cda17-cf81-4918-80f6-5f78e234c9f7">
+      <profileInstance Id="33d869e7-3edf-4801-824b-f2a4e09127a1" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="4c7ea735-5586-4281-810a-71a8eec8f221">
+      <profileInstance Id="2ec45fc4-dde5-481b-beb4-b74213cd8913" name="GoFDesignPatterns">
+        <elementDefinition Id="b2ec555c-7ad5-4568-ac10-ebbefafe538a" />
+      </profileInstance>
+      <elementDefinition Id="74b34c67-f946-48ae-a1f7-ce09ad6bf6e5" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="7cbe2470-580f-4ee9-8846-8c4cac08202f" name="AbstractService" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="0ff9bcab-0dee-445c-a875-8af204fed2ca" name="AbstractService" profile="GoFDesignPatterns">
+            <elementDefinition Id="4e6b5b14-988e-40ff-907b-55364e438d43" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="4d17c92b-ad8f-447b-bc9d-628a2a7fab6c" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="2ebbed07-bc1b-45e6-81a5-e6c3801dddc2" name="ConcreteService" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="5da6ed70-f3aa-494a-9779-5a6fef28868c" name="ConcreteService" profile="GoFDesignPatterns">
+            <elementDefinition Id="2dea13a7-f90e-48f2-85e8-d03f077d7f57" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="1c59dcfa-8f93-491a-9139-040d90e7f5c3" />
+        <generalsInternal>
+          <generalization Id="598b6ab0-2934-4ce6-9e0c-631663a1ea91" isSubstitutable="false">
+            <classMoniker Id="7cbe2470-580f-4ee9-8846-8c4cac08202f" LastKnownName="AbstractService" />
+            <elementDefinition Id="4c89148b-a964-49cc-968c-062d66980d35" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="22343240-bc49-4596-8953-bd0690d754e6" name="AbstractWrapper" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="2aae9659-dfdf-4f81-b74e-21dcb3794f94" name="AbstractWrapper" profile="GoFDesignPatterns">
+            <elementDefinition Id="315ba440-a7e8-4a9a-b57f-71b3e3d0eec6" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="fe50d513-a9a8-414c-b78f-17869cf2b863" />
+        <generalsInternal>
+          <generalization Id="2146990a-98e8-4a3d-a84d-25509f8ec205" isSubstitutable="false">
+            <classMoniker Id="7cbe2470-580f-4ee9-8846-8c4cac08202f" LastKnownName="AbstractService" />
+            <elementDefinition Id="3d6f9924-0d0c-4c87-824a-54315725a9a7" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="8cb946f3-6d77-4a06-bc59-d5f46bd7e54b" name="ConcreteWrapper" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="30cb3f79-60e4-4201-8772-f081ab96ec53" name="ConcreteWrapper" profile="GoFDesignPatterns">
+            <elementDefinition Id="6151ceba-ecd2-434e-89e5-bd0529fa7096" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="852e79c2-15e2-4245-b247-b113507d09c7" />
+        <generalsInternal>
+          <generalization Id="689a180c-5fe0-4a13-89c4-544a62dbc1a8" isSubstitutable="false">
+            <classMoniker Id="22343240-bc49-4596-8953-bd0690d754e6" LastKnownName="AbstractWrapper" />
+            <elementDefinition Id="93b6bfbc-4c7b-4ac6-ac3b-595c8ccf9a82" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="9daad679-fbec-4b47-afad-157304ef7107" name="DesignPatternDiagrams">
+    <elementDefinition Id="907f02d9-97a4-416e-85de-c96834fd3288" />
+  </package>
+</logicalClassDesignerModel>

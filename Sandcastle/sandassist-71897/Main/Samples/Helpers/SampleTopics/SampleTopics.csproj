@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E82F84F5-EB65-49C3-B712-FAA3B3F1B140}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HelpTestTopics</RootNamespace>
+    <AssemblyName>HelpTestTopics</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CodeSnippetSample.snippets" />
+    <None Include="Documents\RootNamespaces.aml" />
+    <None Include="Documents\EmbedSilverlight.aml" />
+    <None Include="Documents\EmbedFlash.aml" />
+    <None Include="Documents\EmbedXps.aml" />
+    <None Include="Documents\EmbedPdf.aml" />
+    <None Include="Documents\RootTopic.aml" />
+    <Content Include="Documents\TestHtmlDocument.htm" />
+    <Content Include="Media\ArrowDisabled.png" />
+    <Content Include="Media\ArrowHovered.png" />
+    <Content Include="Media\ArrowNormal.png" />
+    <Content Include="Media\ChevronLess.png" />
+    <Content Include="Media\ChevronLessHovered.png" />
+    <Content Include="Media\ChevronLessPressed.png" />
+    <Content Include="Media\ChevronMore.png" />
+    <Content Include="Media\ChevronMoreHovered.png" />
+    <Content Include="Media\ChevronMorePressed.png" />
+    <Content Include="Media\Codes.png" />
+    <Content Include="Media\ConceptsStruct.png" />
+    <Content Include="Media\Contents1.jpg" />
+    <Content Include="Media\Contents2.jpg" />
+    <Content Include="Media\Contents2a.jpg" />
+    <Content Include="Media\Contents3.jpg" />
+    <Content Include="Media\Contents4.jpg" />
+    <Content Include="Media\DialUseCase.swf" />
+    <Content Include="Media\digitalClock.xap" />
+    <Content Include="Media\Error.png" />
+    <Content Include="Media\HelpUpdate.jpg" />
+    <Content Include="Media\HelpUpdate9.jpg" />
+    <Content Include="Media\IndexFilter.jpg" />
+    <Content Include="Media\Information.png" />
+    <Content Include="Media\Introduction.png" />
+    <None Include="MediaContent.media" />
+    <Content Include="Media\MSDExplore.jpg" />
+    <Content Include="Media\NativityBanner.jpg" />
+    <Content Include="Media\pubproperty.gif" />
+    <Content Include="Media\Question.png" />
+    <Content Include="Media\QuickStart.png" />
+    <Content Include="Media\RegisterFlow.jpg" />
+    <Content Include="Media\SearchFilter.jpg" />
+    <Content Include="Media\Security.png" />
+    <Content Include="Media\SecurityError.png" />
+    <Content Include="Media\SecurityQuestion.png" />
+    <Content Include="Media\SecuritySuccess.png" />
+    <Content Include="Media\SecurityWarning.png" />
+    <Content Include="Media\SilverlightApplication2.xap" />
+    <Content Include="Media\SmallError.png" />
+    <Content Include="Media\SmallInformation.png" />
+    <Content Include="Media\SmallQuestion.png" />
+    <Content Include="Media\SmallSecurity.png" />
+    <Content Include="Media\SmallSecurityError.png" />
+    <Content Include="Media\SmallSecurityQuestion.png" />
+    <Content Include="Media\SmallSecuritySucess.png" />
+    <Content Include="Media\SmallSecurityWarning.png" />
+    <Content Include="Media\SmallWarning.png" />
+    <Content Include="Media\Warning.png" />
+    <None Include="Documents\References.aml" />
+    <None Include="Documents\CodeTest.aml" />
+    <None Include="Documents\Document.aml" />
+    <None Include="Documents\DocumentTypes\Conceptual.aml" />
+    <None Include="Documents\DocumentTypes\Documents.aml" />
+    <None Include="Documents\DocumentTypes\ErrorMessages.aml" />
+    <None Include="Documents\DocumentTypes\Glossary.aml" />
+    <None Include="Documents\DocumentTypes\HowTo.aml" />
+    <None Include="Documents\DocumentTypes\Orientations.aml" />
+    <None Include="Documents\DocumentTypes\ReferenceWithoutSyntax.aml" />
+    <None Include="Documents\DocumentTypes\ReferenceWithSyntax.aml" />
+    <None Include="Documents\DocumentTypes\Samples.aml" />
+    <None Include="Documents\DocumentTypes\Troubleshooting.aml" />
+    <None Include="Documents\DocumentTypes\UIReference.aml" />
+    <None Include="Documents\DocumentTypes\Walkthrough.aml" />
+    <None Include="Documents\DocumentTypes\WhitePaper.aml" />
+    <None Include="Documents\DocumentTypes\XmlReference.aml" />
+    <None Include="Documents\Examples\Alerts.aml" />
+    <None Include="Documents\Examples\Codes.aml" />
+    <None Include="Documents\Examples\DefinitionTables.aml" />
+    <None Include="Documents\Examples\Examples.aml" />
+    <None Include="Documents\Examples\General.aml" />
+    <None Include="Documents\Examples\Images.aml" />
+    <None Include="Documents\Examples\Links.aml" />
+    <None Include="Documents\Examples\Lists.aml" />
+    <None Include="Documents\Examples\Others.aml" />
+    <None Include="Documents\Examples\Tables.aml" />
+    <None Include="Documents\FormulaGallery.aml" />
+    <None Include="Documents\MathDocument.aml" />
+    <None Include="Documents\Testing.aml" />
+    <None Include="Documents\Tutorials\CodeTest.aml" />
+    <None Include="Documents\Tutorials\Introduction.aml" />
+    <None Include="Documents\Tutorials\Issues.aml" />
+    <None Include="Documents\Tutorials\QuickStart.aml" />
+    <None Include="Documents\Tutorials\Tutorial.aml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CodeSnippets.xsd" />
+    <None Include="Media\PdfTest.pdf" />
+    <None Include="Media\XpsTest.xps" />
+    <None Include="Topics.sandtopics" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <SaveServerSettingsInUserFile>True</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

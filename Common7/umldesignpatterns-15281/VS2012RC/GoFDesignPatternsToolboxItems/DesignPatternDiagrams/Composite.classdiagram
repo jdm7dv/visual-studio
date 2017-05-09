@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="148714a8-c28b-4642-afa4-584d85e71f9d" name="Composite" linkedPackageId="4a8aa48c-eaf7-4f82-adc4-414a8da32d8a" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="48b4426f-bf55-4b6b-8593-7deac4af75b3">
+      <profileInstance Id="9e99d4c7-c8e8-426f-843d-3d0a97135e1f" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="8bbaf282-98f5-4cdf-87a9-58f2a482eeaf">
+      <profileInstance Id="5aed5044-facb-4d60-b32c-6373bde9b31f" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="12cd4c76-c873-4549-8ffc-fef0b0a65fc6">
+      <profileInstance Id="3d91329d-785e-44ac-b8cf-2467ea122ea3" name="GoFDesignPatterns">
+        <elementDefinition Id="b2ec555c-7ad5-4568-ac10-ebbefafe538a" />
+      </profileInstance>
+      <elementDefinition Id="74b34c67-f946-48ae-a1f7-ce09ad6bf6e5" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f5ad1abb-5085-4e75-a2bb-8caadcebf76b" name="Leaf" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="92b5f400-b875-4398-a1ac-b95af349822e" name="Leaf" profile="GoFDesignPatterns">
+            <elementDefinition Id="0d31245d-29eb-4435-ae06-a03f7067896c" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="63911b66-733e-4789-9732-f06d0a8bf14e" />
+        <generalsInternal>
+          <generalization Id="a1d11c47-bd57-4224-8980-1b2610960b41" isSubstitutable="false">
+            <classMoniker Id="5ec13fad-34c7-4e0e-8b06-4afe74ef3807" LastKnownName="Component" />
+            <elementDefinition Id="6fed062a-412e-4c74-bb1b-6ed593998e20" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="5ec13fad-34c7-4e0e-8b06-4afe74ef3807" name="Component" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="d1b402db-c970-4890-8b0f-82269c59f52c" name="Component" profile="GoFDesignPatterns">
+            <elementDefinition Id="7986681b-c62f-439c-9032-1ed2996f95d9" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="8523f58c-6695-4f47-8fc6-7723bffb1d2a" />
+        <ownedOperationsInternal>
+          <operation Id="2343d469-0a3a-4ffe-95b9-b956fab7d76d" name="Operation" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="3f71f0ae-4bf3-4e02-a4c7-26d000688e27" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="6744d98e-36ae-472b-8b3e-94b6c7ca0085" name="Composite" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="80ca73cf-8af1-4a63-a7be-636d8710ef75" name="Composite" profile="GoFDesignPatterns">
+            <elementDefinition Id="d47d186a-ca50-43ce-95cd-5c49d08e0d47" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="035435f2-6b17-44b5-baa0-9cacacd98b6b" />
+        <generalsInternal>
+          <generalization Id="5eb40eec-1819-4786-a016-4380a8a06bcb" isSubstitutable="false">
+            <classMoniker Id="5ec13fad-34c7-4e0e-8b06-4afe74ef3807" LastKnownName="Component" />
+            <elementDefinition Id="80a75eec-4e08-4a24-bce6-3575d10242b6" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="056e2281-7249-4738-9e8e-1d81e0a54a27" name="Add" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="7e120657-d91b-4bd5-93eb-62571b2c6260" />
+          </operation>
+          <operation Id="0d3cea3f-59e9-41d0-a24c-8388ef2a0865" name="Remove" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0774fd83-1978-4331-a584-9a64f8b0e752" />
+          </operation>
+          <operation Id="481419a4-309b-41d6-8cfe-9b4ca2fbe80b" name="GetChild" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="988190fb-2073-41d5-8b70-1694a42c5aa5" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="4a8aa48c-eaf7-4f82-adc4-414a8da32d8a" name="DesignPatternDiagrams">
+    <elementDefinition Id="907f02d9-97a4-416e-85de-c96834fd3288" />
+  </package>
+</logicalClassDesignerModel>
