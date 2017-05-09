@@ -1,6 +1,0 @@
-C:\Users\Jonathan_Moore\Documents\Visual Studio 2010\Projects\Windows\Engineering System\Common7\Tools\ANTLR\Projects\5621.grammar\bin\Debug\VBGrammarAnalyzer.exe
-C:\Users\Jonathan_Moore\Documents\Visual Studio 2010\Projects\Windows\Engineering System\Common7\Tools\ANTLR\Projects\5621.grammar\bin\Debug\VBGrammarAnalyzer.pdb
-C:\Users\Jonathan_Moore\Documents\Visual Studio 2010\Projects\Windows\Engineering System\Common7\Tools\ANTLR\Projects\5621.grammar\bin\Debug\VBGrammarAnalyzer.xml
-C:\Users\Jonathan_Moore\Documents\Visual Studio 2010\Projects\Windows\Engineering System\Common7\Tools\ANTLR\Projects\5621.grammar\obj\x86\Debug\VBGrammarAnalyzer.exe
-C:\Users\Jonathan_Moore\Documents\Visual Studio 2010\Projects\Windows\Engineering System\Common7\Tools\ANTLR\Projects\5621.grammar\obj\x86\Debug\VBGrammarAnalyzer.xml
-C:\Users\Jonathan_Moore\Documents\Visual Studio 2010\Projects\Windows\Engineering System\Common7\Tools\ANTLR\Projects\5621.grammar\obj\x86\Debug\VBGrammarAnalyzer.pdb

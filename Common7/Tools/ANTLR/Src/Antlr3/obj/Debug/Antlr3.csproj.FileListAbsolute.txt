@@ -1,2 +1,0 @@
-C:\Users\Jonathan_Moore\Desktop\ANTLR\antlrcs-fd955a8a6ea4f8726779c9abd9921479b303806d\bin\Debug\Antlr3.exe.config
-C:\Users\Jonathan_Moore\Documents\Visual Studio 2010\Projects\Windows\Engineering System\Common7\Tools\ANTLR\Src\bin\Debug\Antlr3.exe.config
