@@ -4,3 +4,6 @@
 [submodule "VC#"]
 	path = "VC#"
 	url = https://github.com/jdm7dv/roslyn.git
+[submodule "msbuild"]
+	path = msbuild
+	url = https://github.com/jdm7dv/msbuild.git
