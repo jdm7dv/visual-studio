@@ -1,4 +1,0 @@
-C:\Users\Jonathan_Moore\Desktop\sandassist-71897\Main\Output\Sandcastle.BuildAssembler.dll
-C:\Users\Jonathan_Moore\Desktop\sandassist-71897\Main\Output\Sandcastle.BuildAssembler.pdb
-C:\Users\Jonathan_Moore\Desktop\sandassist-71897\Main\Source\BuildAssembler\obj\Debug\Sandcastle.BuildAssembler.dll
-C:\Users\Jonathan_Moore\Desktop\sandassist-71897\Main\Source\BuildAssembler\obj\Debug\Sandcastle.BuildAssembler.pdb

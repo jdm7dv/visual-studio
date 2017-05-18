@@ -1,5 +1,0 @@
-C:\Users\Jonathan_Moore\Desktop\sandassist-71897\Main\Output\Sandcastle.Iris.xml
-C:\Users\Jonathan_Moore\Desktop\sandassist-71897\Main\Output\Sandcastle.Iris.dll
-C:\Users\Jonathan_Moore\Desktop\sandassist-71897\Main\Output\Sandcastle.Iris.pdb
-C:\Users\Jonathan_Moore\Desktop\sandassist-71897\Main\Libraries\Iris\obj\Debug\Sandcastle.Iris.dll
-C:\Users\Jonathan_Moore\Desktop\sandassist-71897\Main\Libraries\Iris\obj\Debug\Sandcastle.Iris.pdb

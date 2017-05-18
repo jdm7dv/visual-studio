@@ -7,3 +7,6 @@
 [submodule "standard"]
 	path = standard
 	url = https://github.com/jdm7dv/standard.git
+[submodule "SHFB"]
+	path = SHFB
+	url = https://github.com/jdm7dv/SHFB.git

@@ -1,2 +1,0 @@
-C:\Users\Jonathan_Moore\Desktop\sandassist-71897\Main\Source\Builders\obj\Debug\Sandcastle.Builders.Properties.Resources.resources
-C:\Users\Jonathan_Moore\Desktop\sandassist-71897\Main\Source\Builders\obj\Debug\Builders.csproj.GenerateResource.Cache

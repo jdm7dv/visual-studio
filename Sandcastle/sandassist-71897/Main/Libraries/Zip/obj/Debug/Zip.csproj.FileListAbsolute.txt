@@ -1,5 +1,0 @@
-C:\Users\Jonathan_Moore\Desktop\sandassist-71897\Main\Output\Sandcastle.Zip.xml
-C:\Users\Jonathan_Moore\Desktop\sandassist-71897\Main\Output\Sandcastle.Zip.dll
-C:\Users\Jonathan_Moore\Desktop\sandassist-71897\Main\Output\Sandcastle.Zip.pdb
-C:\Users\Jonathan_Moore\Desktop\sandassist-71897\Main\Libraries\Zip\obj\Debug\Sandcastle.Zip.dll
-C:\Users\Jonathan_Moore\Desktop\sandassist-71897\Main\Libraries\Zip\obj\Debug\Sandcastle.Zip.pdb
