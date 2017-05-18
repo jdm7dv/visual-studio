@@ -10,3 +10,6 @@
 [submodule "SHFB"]
 	path = SHFB
 	url = https://github.com/jdm7dv/SHFB.git
+[submodule "msbuild"]
+	path = msbuild
+	url = https://github.com/jdm7dv/msbuild.git
