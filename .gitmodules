@@ -13,3 +13,6 @@
 [submodule "msbuild"]
 	path = msbuild
 	url = https://github.com/jdm7dv/msbuild.git
+[submodule "Common7/IDE/entity_framework"]
+	path = Common7/IDE/entity_framework
+	url = https://github.com/jdm7dv/EntityFramework.git
