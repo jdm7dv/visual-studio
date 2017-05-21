@@ -16,3 +16,6 @@
 [submodule "Common7/IDE/entity_framework"]
 	path = Common7/IDE/entity_framework
 	url = https://github.com/jdm7dv/EntityFramework.git
+[submodule "Build/ninja"]
+	path = Build/ninja
+	url = https://github.com/jdm7dv/ninja.git
