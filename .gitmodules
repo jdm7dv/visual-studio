@@ -19,3 +19,6 @@
 [submodule "Build/ninja"]
 	path = Build/ninja
 	url = https://github.com/jdm7dv/ninja.git
+[submodule "VSExtensability/VSProjectSystem"]
+	path = VSExtensability/VSProjectSystem
+	url = https://github.com/jdm7dv/VSProjectSystem.git
