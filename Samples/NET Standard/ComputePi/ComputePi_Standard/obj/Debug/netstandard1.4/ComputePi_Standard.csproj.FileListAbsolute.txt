@@ -1,3 +1,0 @@
-D:\Workspace\jdm7dv\visual-studio\Samples\Samples for Parallel\Standard\ComputePi\ComputePi_Standard\bin\Debug\netstandard1.4\ComputePi_Standard.deps.json
-D:\Workspace\jdm7dv\visual-studio\Samples\Samples for Parallel\Standard\ComputePi\ComputePi_Standard\obj\Debug\netstandard1.4\ComputePi_Standard.csprojResolveAssemblyReference.cache
-D:\Workspace\jdm7dv\visual-studio\Samples\Samples for Parallel\Standard\ComputePi\ComputePi_Standard\obj\Debug\netstandard1.4\ComputePi_Standard.AssemblyInfo.cs
